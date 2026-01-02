@@ -1521,6 +1521,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("integer")
                         .HasColumnName("character_index");
 
+                    b.Property<DateTime?>("LastWithdrawn")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("last_withdrawn");
+
                     b.Property<string>("Nickname")
                         .HasColumnType("text")
                         .HasColumnName("nickname");
