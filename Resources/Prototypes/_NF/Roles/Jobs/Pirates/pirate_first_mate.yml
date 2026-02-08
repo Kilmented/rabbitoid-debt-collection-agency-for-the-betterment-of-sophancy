@@ -19,7 +19,7 @@
   weight: 40
   displayWeight: 40
   setPreference: true
-  guides: [ BasicLore, PhaethonDynasty] # Mono
+  guides: [ BasicLore ] # Mono
   access:
   - Pirate
   - PDVCommand
