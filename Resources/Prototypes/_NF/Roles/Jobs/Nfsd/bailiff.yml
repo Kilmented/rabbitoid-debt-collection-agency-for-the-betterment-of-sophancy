@@ -18,7 +18,7 @@
   weight: 150
   displayWeight: 60
   canBeAntag: false
-  guides: [ BasicLore, TransSolarFederation ] # Mono
+  guides: [ BasicLore ] # Mono
   access:
   - Armory
   - Sergeant

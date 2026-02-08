@@ -19,7 +19,7 @@
   weight: 125
   displayWeight: 35
   canBeAntag: false
-  guides: [ BasicLore, TransSolarFederation ] # Mono
+  guides: [ BasicLore ] # Mono
   accessGroups:
   - GeneralNfsdBrigmedicAccess
   special:

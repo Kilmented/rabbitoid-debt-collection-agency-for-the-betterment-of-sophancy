@@ -15,7 +15,7 @@
   weight: 20
   displayWeight: 20
   setPreference: true
-  guides: [ BasicLore, PhaethonDynasty ] # Mono
+  guides: [ BasicLore ] # Mono
   access:
   - Pirate
   - Mercenary
