@@ -46,7 +46,7 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedStorageSystem _storage = default!;
     [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
-    [Dependency] private readonly LabelSystem _label = default!;
+    [Dependency] private readonly SharedLabelSystem _label = default!; // Wicce: LabelSystem -> SharedLabelSystem
     [Dependency] private readonly IServerPreferencesManager _prefsManager = default!;
 
     public override void Initialize()
@@ -321,14 +321,14 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
             try
             {
                 Log.Info($"Serializing item: {ToPrettyString(item)}");
-                
+
                 // Blacklist ID cards - they should not be stored
                 if (HasComp<IdCardComponent>(item))
                 {
                     Log.Warning($"Item {ToPrettyString(item)} is an ID card, skipping");
                     continue;
                 }
-                
+
                 // Get the prototype and metadata
                 var prototype = MetaData(item).EntityPrototype;
                 if (prototype == null)
@@ -336,20 +336,20 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
                     Log.Warning($"Item {ToPrettyString(item)} has no prototype, skipping");
                     continue;
                 }
-                
+
                 var protoId = prototype.ID;
-                
+
                 // Create a JSON object to store entity data
                 var entityData = new Dictionary<string, object>
                 {
                     ["prototype"] = protoId
                 };
-                
+
                 // Store paper content and stamps/signatures if it's a paper
                 if (TryComp<PaperComponent>(item, out var paper))
                 {
                     entityData["paperContent"] = paper.Content;
-                    
+
                     // Store stamps and signatures - store each stamp as a separate entry to preserve structure
                     if (paper.StampedBy.Count > 0)
                     {
@@ -367,32 +367,32 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
                         }
                         entityData["paperStamps"] = stampsList;
                     }
-                    
+
                     if (!string.IsNullOrEmpty(paper.StampState))
                     {
                         entityData["paperStampState"] = paper.StampState;
                     }
-                    
+
                     Log.Info($"Stored paper content: {paper.Content.Substring(0, Math.Min(50, paper.Content.Length))}... with {paper.StampedBy.Count} stamps");
                 }
-                
+
                 // Store label if it has one
                 if (TryComp<LabelComponent>(item, out var label) && !string.IsNullOrEmpty(label.CurrentLabel))
                 {
                     entityData["label"] = label.CurrentLabel;
                     Log.Info($"Stored label: {label.CurrentLabel}");
                 }
-                
+
                 // Store stack count if it's a stack
                 if (TryComp<StackComponent>(item, out var stack))
                 {
                     entityData["stackCount"] = stack.Count;
                     Log.Info($"Stored stack count: {stack.Count}");
                 }
-                
+
                 // Serialize to JSON
                 var json = JsonSerializer.Serialize(entityData);
-                
+
                 Log.Info($"Serialized as JSON: {json}");
                 entityDataList.Add(json);
             }
@@ -414,7 +414,7 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
 
         // Save to database
         await _dbManager.DepositSafetyDepositBoxItems(boxComp.BoxId!.Value, entityDataList);
-        
+
         // Update nickname if one was set
         if (nickname != null)
         {
@@ -423,7 +423,7 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
 
         // Remove from slot before deleting to properly update UI
         _itemSlots.TryEject(consoleUid, component.BoxSlot, null, out _);
-        
+
         // Delete the physical box
         QueueDel(boxEntity);
 
@@ -516,30 +516,30 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
                 try
                 {
                     Log.Info($"Deserializing item, JSON length: {itemData.EntityData.Length}");
-                    
+
                     // Parse the JSON data
                     var entityData = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(itemData.EntityData);
-                    
+
                     if (entityData == null || !entityData.ContainsKey("prototype"))
                     {
                         Log.Warning($"Invalid entity data: {itemData.EntityData}");
                         continue;
                     }
-                    
+
                     var protoId = entityData["prototype"].GetString();
                     if (protoId == null)
                     {
                         Log.Warning($"Could not extract prototype ID from JSON");
                         continue;
                     }
-                    
+
                     Log.Info($"Spawning entity with prototype: {protoId}");
-                    
+
                     // Spawn the entity from prototype at box location
                     var itemEntity = Spawn(protoId, Transform(boxEntity).Coordinates);
-                    
+
                     Log.Info($"Spawned entity: {ToPrettyString(itemEntity)}");
-                    
+
                     // Restore paper content, stamps, and signatures if present
                     if (TryComp<PaperComponent>(itemEntity, out var paper))
                     {
@@ -552,7 +552,7 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
                                 Log.Info($"Restored paper content: {content.Substring(0, Math.Min(50, content.Length))}...");
                             }
                         }
-                        
+
                         // Restore stamps and signatures
                         if (entityData.ContainsKey("paperStamps"))
                         {
@@ -560,7 +560,7 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
                             {
                                 var stampsArray = entityData["paperStamps"].EnumerateArray();
                                 var stampsList = new List<StampDisplayInfo>();
-                                
+
                                 foreach (var stampElement in stampsArray)
                                 {
                                     var stampInfo = new StampDisplayInfo
@@ -572,7 +572,7 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
                                     };
                                     stampsList.Add(stampInfo);
                                 }
-                                
+
                                 if (stampsList.Count > 0)
                                 {
                                     paper.StampedBy = stampsList;
@@ -584,7 +584,7 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
                                 Log.Error($"Failed to restore stamps: {ex}");
                             }
                         }
-                        
+
                         if (entityData.ContainsKey("paperStampState"))
                         {
                             var stampState = entityData["paperStampState"].GetString();
@@ -593,10 +593,10 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
                                 paper.StampState = stampState;
                             }
                         }
-                        
+
                         Dirty(itemEntity, paper);
                     }
-                    
+
                     // Restore label if present
                     if (entityData.ContainsKey("label"))
                     {
@@ -607,7 +607,7 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
                             Log.Info($"Restored label: {labelText}");
                         }
                     }
-                    
+
                     // Restore stack count if present
                     if (entityData.ContainsKey("stackCount") && TryComp<StackComponent>(itemEntity, out var stack))
                     {
@@ -619,10 +619,10 @@ public sealed class SafetyDepositBoxSystem : EntitySystem
                             Log.Info($"Restored stack count: {stackCount}");
                         }
                     }
-                    
+
                     // Mark item as having been stored in a deposit box
                     EnsureComp<SafetyDepositStoredComponent>(itemEntity);
-                    
+
                     // Insert into storage
                     if (!_storage.Insert(boxEntity, itemEntity, out _, storageComp: storageComp, playSound: false))
                     {
