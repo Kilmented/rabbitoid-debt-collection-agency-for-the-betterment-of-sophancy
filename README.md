@@ -1,6 +1,6 @@
-Wicce's Den is melancholic, intimate, and hardcore Monolith fork focused on immersion and atmosphere. 
+Wicce's Keep is melancholic, intimate, and hardcore [Monolith](https://github.com/Monolith-Station/Monolith) fork focused on immersion and atmosphere. 
 
-[Monolith](https://github.com/Monolith-Station/Monolith) is a fork of [Frontier](https://github.com/new-frontiers-14/frontier-station-14) that runs on the [Robust Toolbox](https://github.com/space-wizards/RobustToolbox) engine written in C#.
+Monolith is a fork of [Frontier](https://github.com/new-frontiers-14/frontier-station-14) that runs on the [Robust Toolbox](https://github.com/space-wizards/RobustToolbox) engine written in C#.
 
 ## Links
 
