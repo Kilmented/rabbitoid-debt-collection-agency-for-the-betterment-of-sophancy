@@ -52,7 +52,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 1,1,0,0
+    - 0,0,1,1
 
 - type: entity
   id: SafetyDepositBoxSmall
@@ -68,7 +68,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 1,2,0,0
+    - 0,0,1,2
 
 - type: entity
   id: SafetyDepositBoxMedium
@@ -84,7 +84,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 1,3,0,0
+    - 0,0,1,3
 
 - type: entity
   id: SafetyDepositBoxLarge
@@ -100,7 +100,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 2,2,0,0
+    - 0,0,2,2
 
 - type: entity
   id: SafetyDepositConsole
