@@ -1,1 +1,1 @@
-species-name-resomi = Raptorkin
+species-name-resomi = Resomi

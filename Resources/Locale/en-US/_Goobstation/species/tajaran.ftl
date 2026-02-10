@@ -1,1 +1,1 @@
-species-name-tajaran = Felidkin
+species-name-tajaran = Tajaran
