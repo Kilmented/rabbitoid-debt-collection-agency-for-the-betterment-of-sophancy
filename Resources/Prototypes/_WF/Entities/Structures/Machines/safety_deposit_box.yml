@@ -133,8 +133,6 @@
       safety-deposit-console-boxSlot: !type:ContainerSlot
   - type: ActivatableUI
     key: enum.SafetyDepositConsoleUiKey.Key
-  - type: Machine # Wicce: Added for check's sake.
-    board: SafetyDepositConsoleCircuitboard
 
   - type: UserInterface
     interfaces:
