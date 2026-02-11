@@ -1,0 +1,38 @@
+# Author Info
+# GitHub: VVersengt (https://github.com/VVersengt)
+# Discord: Versengt
+
+- type: vessel
+  id: scarab
+  parent: BaseVessel
+  name: Scarab
+  description: A mercenary ship.
+  price: 145000 # some bullshit price that i just made up
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_WD/Shuttles/scarab.yml
+  guidebookPage: Null
+  class:
+  - Salvage
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: scarab
+  mapName: 'scarab'
+  mapPath: /Maps/_WD/Shuttles/scarab.yml
+  minPlayers: 0
+  stations:
+    scarab:
+      stationProto: StandardFrontierVessel
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Scarab {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'
+      - type: StationJobs
+        availableJobs:
+          Contractor: [ 0, 0 ]
+          Pilot: [ 0, 0 ]
+          Mercenary: [ 0, 0 ]
