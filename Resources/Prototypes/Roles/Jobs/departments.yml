@@ -34,6 +34,7 @@
   - Mercenary # Frontier
   - Pilot # Frontier
   - Borg # Frontier
+  editorHidden: true # Wicce
 
 - type: department
   id: CentralCommand
@@ -82,6 +83,7 @@
   - DirectorOfCare # Mono
   primary: false
   weight: 100
+  editorHidden: true # Wicce
 
 - type: department
   id: Engineering
@@ -101,6 +103,7 @@
   roles: # Mono
   - DirectorOfCare # Mono
   - MdMedic # Mono
+  editorHidden: true # Wicce
 
 - type: department
   id: Security
@@ -126,6 +129,7 @@
   - PublicAffairsLiaison # Frontier
   - TsfEngineer # Mono
   - TsfBorg # Mono
+  editorHidden: true # Wicce
 
 - type: department
   id: Science
