@@ -23,6 +23,7 @@
   - NFJanitor
   - MailCarrier # nyano
   - SecurityGuard
+  editorHidden: true # Wicce
 
 - type: department
   id: Antag
@@ -38,3 +39,4 @@
   - PDVInfiltrator # Mono
   - PdvBorg # Mono
   - Prisoner #nyano
+  editorHidden: true # Wicce

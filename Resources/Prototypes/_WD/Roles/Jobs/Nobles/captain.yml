@@ -1,0 +1,85 @@
+- type: job
+  id: Captain
+  name: job-name-captain
+  description: job-description-captain
+  playTimeTracker: JobCaptain
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 21600 # 6 hours
+  whitelisted: true
+  startingGear: CaptainGear
+  alwaysUseSpawner: true
+  icon: "JobIconCaptain"
+  requireAdminNotify: true
+  supervisors: job-supervisors-shipbaron
+  weight: 170
+  displayWeight: 60
+  canBeAntag: false
+  guides: [ BasicLore ]
+  accessGroups:
+  - AllAccessSR
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+  - !type:GiveItemOnHolidaySpecial
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+
+- type: startingGear
+  id: CaptainGear
+  equipment:
+    pocket1: WeaponDisabler
+  storage:
+    back:
+    - Flash
+    - RubberStampSr
+    - DoorRemoteCommand
+    - EncryptionKeyCentCom
+    - EncryptionKeyStationMasterSR #Mono start
+    - EncryptionKeyDiplomacy
+    - ShipVoucherFrontierGuard
+   #- EncryptionKeyStationMaster # Mono end
+
+- type: playTimeTracker
+  id: JobCaptain
+
+- type: entity
+  id: SpawnPointCaptain
+  parent: SpawnPointHeadOfPersonnel
+  name: captain
+  components:
+  - type: SpawnPoint
+    job_id: Captain
+
+- type: roleLoadout
+  id: JobCaptain
+  groups:
+  #  - StationRepHead
+  #  - StationRepNeck
+  #  - StationRepJumpsuit
+  - StationRepGloves
+  - StationRepBackpack
+  - StationRepOuterClothing
+  #  - ContractorShoes
+  #  - ContractorFace
+  #  - ContractorGlasses
+  #  - ContractorBelt
+  - MonoSecurityGuardHud
+  - StationRepEars
+  - MonoSecurityGuardShoes
+  - HeadofSecurityHead
+  - HeadofSecurityJumpsuit
+  - HeadofSecurityNeck
+  - ColonialLiaisonFirearm # Mono
+  - ContractorBoxSurvival
+  - StationRepPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  # - ContractorFun # Mono - no fun allowed
+  - StationRepTrinkets
+  - ContractorBureaucracy
+  - NFSpeciesSpecific
