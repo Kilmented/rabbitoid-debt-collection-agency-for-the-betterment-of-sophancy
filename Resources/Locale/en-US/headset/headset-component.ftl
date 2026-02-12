@@ -8,11 +8,11 @@ examine-headset-default-channel = Use {$prefix} for the default channel ([color=
 
 chat-radio-common = Broadband
 chat-radio-centcom = CentComm
-chat-radio-command = TSF Command
+chat-radio-command = Nobles
 chat-radio-engineering = Engineering
 chat-radio-medical = Medical
 chat-radio-science = Science
-chat-radio-security = Colonial Security
+chat-radio-security = Knights
 chat-radio-service = Colonial Staff
 chat-radio-supply = Supply
 chat-radio-syndicate = Syndicate
