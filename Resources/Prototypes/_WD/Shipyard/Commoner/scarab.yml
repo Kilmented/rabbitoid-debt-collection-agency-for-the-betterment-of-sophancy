@@ -1,5 +1,5 @@
 # Author Info
-# GitHub: VVersengt (https://github.com/VVersengt)
+# GitHub: VVersengt (https://github.com/VVersengt). TY Versengt!
 # Discord: Versengt
 
 - type: vessel
@@ -7,9 +7,9 @@
   parent: BaseVessel
   name: Scarab
   description: A mercenary ship.
-  price: 145000 # some bullshit price that i just made up
+  price: 999999 # Voucher only!
   category: Medium
-  group: Medical
+  group: Commoner
   shuttlePath: /Maps/_WD/Shuttles/scarab.yml
   guidebookPage: Null
   class:
@@ -27,7 +27,7 @@
       stationProto: StandardFrontierVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'Scarab {1}'
+        mapNameTemplate: 'Scarab DTU{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'

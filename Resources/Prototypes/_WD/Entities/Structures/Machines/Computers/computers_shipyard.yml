@@ -1,0 +1,81 @@
+# Consoles for Wicce
+- type: entity
+  id: ComputerShipyardKnight
+  parent: [BaseStructureDisableToolUse, BaseStructureDestructible, ComputerShipyardBase]
+  name: Knight shipyard console
+  description: Used to buy ships primarily for combat.
+  components:
+  - type: ActivatableUI
+    key: enum.ShipyardConsoleUiKey.Knight
+  - type: UserInterface
+    interfaces:
+      enum.ShipyardConsoleUiKey.Knight:
+        type: ShipyardConsoleBoundUserInterface
+  - type: Sprite
+    sprite: _NF/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_blackmarket
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: shipyard_blackmarket
+    - map: ["computerLayerKeys"]
+      state: blackmarket_key
+  - type: ShipyardConsole
+    shipyardChannel: Command
+    secretShipyardChannel: Security
+
+- type: entity
+  id: ComputerShipyardCommoner
+  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyard]
+  name: shipyard console
+  description: Used to purchase and sell shuttles.
+  components:
+  - type: ActivatableUI
+    key: enum.ShipyardConsoleUiKey.Commoner
+  - type: UserInterface
+    interfaces:
+      enum.ShipyardConsoleUiKey.Commoner:
+        type: ShipyardConsoleBoundUserInterface
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_not_rot
+    - map: ["computerLayerKeyboard"]
+      state: gunnery_keyboard
+    - map: ["computerLayerScreen"]
+      state: shipyard_SHM
+    - map: ["computerLayerKeys"]
+      state: gunnery_keys
+  - type: ShipyardConsole
+    shipyardChannel: Traffic
+    secretShipyardChannel: Security
+
+- type: entity
+  id: ComputerShipyardNoble
+  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyardBase]
+  name: Noble shipyard console
+  description: Used to buy shuttles exclusive to Nobles.
+  components:
+  - type: ActivatableUI
+    key: enum.ShipyardConsoleUiKey.Noble
+  - type: UserInterface
+    interfaces:
+      enum.ShipyardConsoleUiKey.Noble:
+        type: ShipyardConsoleBoundUserInterface
+  - type: Sprite
+    sprite: _NF/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_sr
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: shipyard_sr
+    - map: ["computerLayerKeys"]
+      state: telesci_key
+  - type: ShipyardConsole
+    shipyardChannel: Command
+    secretShipyardChannel: Security
