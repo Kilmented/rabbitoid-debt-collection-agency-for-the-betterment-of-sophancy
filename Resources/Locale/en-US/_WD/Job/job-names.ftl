@@ -2,7 +2,7 @@
 job-name-steward = Steward
 job-name-hand = Hand
 job-name-heir = Heir
-job-name-captain = Captain
+job-name-helmsman = Captain
 
 # Knights
 job-name-marshal = Marshal

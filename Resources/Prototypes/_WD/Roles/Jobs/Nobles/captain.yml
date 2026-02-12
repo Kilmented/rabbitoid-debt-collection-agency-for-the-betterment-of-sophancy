@@ -1,15 +1,15 @@
 - type: job
-  id: Captain
-  name: job-name-captain
-  description: job-description-captain
-  playTimeTracker: JobCaptain
+  id: Helmsman
+  name: job-name-helmsman
+  description: job-description-helmsman
+  playTimeTracker: JobHelmsman
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 21600 # 6 hours
   whitelisted: true
-  startingGear: CaptainGear
+  startingGear: HelmsmanGear
   alwaysUseSpawner: true
-  icon: "JobIconCaptain"
+  icon: "JobIconHelmsman"
   requireAdminNotify: true
   supervisors: job-supervisors-shipbaron
   weight: 170
@@ -29,7 +29,7 @@
     prototype: FrontierBirthdayGift
 
 - type: startingGear
-  id: CaptainGear
+  id: HelmsmanGear
   equipment:
     pocket1: WeaponDisabler
   storage:
@@ -44,18 +44,18 @@
    #- EncryptionKeyStationMaster # Mono end
 
 - type: playTimeTracker
-  id: JobCaptain
+  id: JobHelmsman
 
 - type: entity
-  id: SpawnPointCaptain
+  id: SpawnPointHelmsman
   parent: SpawnPointHeadOfPersonnel
-  name: captain
+  name: helmsman
   components:
   - type: SpawnPoint
-    job_id: Captain
+    job_id: Helmsman
 
 - type: roleLoadout
-  id: JobCaptain
+  id: JobHelmsman
   groups:
   #  - StationRepHead
   #  - StationRepNeck

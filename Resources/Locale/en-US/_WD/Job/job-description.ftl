@@ -2,7 +2,7 @@
 job-description-steward = Manage the treasury, collect taxes, pay the the bills, and keep the Arion running.
 job-description-hand = Be a personal assistant to the Retinue. Handle their schedule, their needs, and their whims. Mediate for the commoners.
 job-description-heir = Learn the practical aspects of being a Shipbaron, look pretty on the throne while doing so. A symbol of hope for the commoners, and a symbol of power for the nobles.
-job-description-captain = Enjoy the honor of flying the ship, tread dangerous waters, and listen to the other nobles.
+job-description-helmsman = Enjoy the honor of flying the ship, tread dangerous waters, and listen to the other nobles.
 
 # Knights
 job-description-marshal = Be the head of the Arion's security forces. Keep the ship safe from threats foreign and domestic, and maintain order on board.
