@@ -8,7 +8,7 @@
       department: Knights
       time: 43200 # 12 hours
   whitelisted: true
-  startingGear: SheriffGear
+  startingGear: MarshalGear
   alwaysUseSpawner: true
   icon: "JobIconHeadOfSecurity"
   requireAdminNotify: true
@@ -35,7 +35,7 @@
     prototype: FrontierBirthdayGift
 
 - type: startingGear
-  id: SheriffGear
+  id: MarshalGear
   equipment:
     pocket1: WeaponEnergyGunMultiphase # DeltaV gun
     pocket2: EnergySwordNfsd
