@@ -41,7 +41,7 @@ jobs:
       run: dotnet run --project Content.Packaging client --no-wipe-release
 
     - name: Publish version
-      uses: appleboy/ssh-action@1.2.5
+      uses: appleboy/ssh-action@v1.2.5
       with:
         host: 45.90.97.214
         username: ss14
