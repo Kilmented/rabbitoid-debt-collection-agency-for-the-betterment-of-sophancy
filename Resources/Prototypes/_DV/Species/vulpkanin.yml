@@ -37,29 +37,29 @@
   id: MobVulpkaninMarkingLimits
   points:
     Hair:
-      points: 30
+      points: 1
       required: false
     FacialHair:
-      points: 30
+      points: 1
       required: false
     Tail:
-      points: 30
+      points: 1
       required: true
       defaultMarkings: [ VulpTail ]
     Head:
-      points: 30
+      points: 3
       required: false
     Legs:
-      points: 30
+      points: 1
       required: false
     Arms:
-      points: 30
+      points: 1
       required: false
     Snout:
-      points: 30
+      points: 1
       required: false
     HeadTop:
-      points: 30
+      points: 1
       required: true
       defaultMarkings: [ VulpEar ]
 

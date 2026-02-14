@@ -43,36 +43,36 @@
   onlyWhitelisted: false # Mono
   points:
     Hair:
-      points: 30 # Mono Moth Hair
+      points: 1 # Mono Moth Hair
       required: false
     FacialHair:
-      points: 30
+      points: 0
       required: false
     Tail:
-      points: 30
+      points: 1
       required: true
       defaultMarkings: [ MothWingsDefault ]
     Snout:
-      points: 30
+      points: 1
       required: false
     HeadTop:
-      points: 30
+      points: 1
       required: true
       defaultMarkings: [ MothAntennasDefault ]
     HeadSide:
-      points: 30
+      points: 1
       required: false
     Head:
-      points: 30 # imp 1<4
+      points: 4 # imp 1<4
       required: false
     Chest:
-      points: 30 # imp 1<4
+      points: 4 # imp 1<4
       required: false
     Legs:
-      points: 30 # imp 2<4
+      points: 4 # imp 2<4
       required: false
     Arms:
-      points: 30 # imp 2<4
+      points: 4 # imp 2<4
       required: false
 
 - type: humanoidBaseSprite
