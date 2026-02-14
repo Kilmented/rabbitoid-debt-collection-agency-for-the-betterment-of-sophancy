@@ -37,27 +37,27 @@
   id: MobGoblinMarkingLimits
   points:
     Hair:
-      points: 1
+      points: 30
       required: false
     FacialHair:
-      points: 1
+      points: 30
       required: false
     HeadTop:
-      points: 1
+      points: 30
       required: true
       defaultMarkings: [ GoblinEarsBasic ]
     Snout:
-      points: 2
+      points: 30
       required: false
 #      defaultMarkings: [ GoblinNoseBasic ]
     Chest:
-      points: 1
+      points: 30
       required: false
     Legs:
-      points: 2
+      points: 30
       required: false
     Arms:
-      points: 2
+      points: 30
       required: false
 
 - type: humanoidBaseSprite
