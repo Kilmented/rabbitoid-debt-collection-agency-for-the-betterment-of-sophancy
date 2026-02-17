@@ -906,10 +906,10 @@
   minLimit: 1
   loadouts:
   - BoxSurvivalMonoOxygenExtended
-  - BoxSurvivalMonoOxygenExtended
+  - BoxSurvivalMonoNitrogenExtended
   fallbacks:
   - BoxSurvivalMonoOxygenExtended
-  - BoxSurvivalMonoOxygenExtended
+  - BoxSurvivalMonoNitrogenExtended
 
 - type: loadoutGroup
   id: GeneralEncryptionKey
