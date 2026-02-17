@@ -905,11 +905,11 @@
   name: loadout-group-general-survival-box
   minLimit: 1
   loadouts:
-  - BoxSurvivalMonoOxygenExtended
-  - BoxSurvivalMonoNitrogenExtended
+  - ContractorBoxSurvivalNFOxygenExtended
+  - ContractorBoxSurvivalNFNitrogenExtended
   fallbacks:
-  - BoxSurvivalMonoOxygenExtended
-  - BoxSurvivalMonoNitrogenExtended
+  - ContractorBoxSurvivalNFOxygenExtended
+  - ContractorBoxSurvivalNFNitrogenExtended
 
 - type: loadoutGroup
   id: GeneralEncryptionKey
