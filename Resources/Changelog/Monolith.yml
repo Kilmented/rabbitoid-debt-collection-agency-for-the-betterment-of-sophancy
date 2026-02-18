@@ -17142,3 +17142,12 @@ Entries:
   id: 1893
   time: '2026-02-17T05:04:36.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3236
+- author: Redrover1760
+  changes:
+    - type: Fix
+      message: Hydrakin Character Creation visual displacements fixed.
+    - type: Fix
+      message: Hydrakin get hungry and thirsty now
+  id: 1894
+  time: '2026-02-18T00:09:27.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3243
