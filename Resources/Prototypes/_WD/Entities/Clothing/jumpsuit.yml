@@ -1,6 +1,6 @@
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformCybersunMedicalJumpsuit
+  id: ClothingUniformEcclesiaMedicalJumpsuit
   name: Ecclesia medical jumpsuit
   description: Sterile coveralls worn by Ecclesia staff for protection against biological hazards.
   components:
