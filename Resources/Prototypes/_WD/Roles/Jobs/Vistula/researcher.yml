@@ -9,6 +9,7 @@
   guides: [ VistulaInstitute ]
   icon: "JobIconScientist"
   supervisors: job-supervisors-provost
+  startingGear: ResearcherGear
   accessGroups:
   - VistulaAccess
 

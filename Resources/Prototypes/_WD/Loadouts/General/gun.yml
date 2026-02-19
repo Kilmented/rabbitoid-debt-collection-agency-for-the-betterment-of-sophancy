@@ -24,49 +24,49 @@
 
 - type: loadout #MK32 Universal
   id: GeneralMk32Loadout
-  price: 0
+  price: 100
   storage:
     back:
     - WeaponPistolMk32
 
 - type: loadout #MK32 Universal Ammo
   id: General9x19mmPistolAmmoLoadout
-  price: 500
+  price: 50
   storage:
     back:
     - BoxMagazine9x19mmFMJ
 
 - type: loadout #Disabler
   id: GeneralDisablerLoadout
-  price: 0
+  price: 50
   storage:
     back:
     - WeaponDisabler
 
 - type: loadout #Svalinn
   id: GeneralSvalinnLoadout
-  price: 200
+  price: 75
   storage:
     back:
     - WeaponLaserSvalinn
 
 - type: loadout #Makeshift Laser
   id: GeneralLaserLoadout
-  price: 0
+  price: 25
   storage:
     back:
     - WeaponMakeshiftLaser
 
 - type: loadout #Argenti
   id: GeneralArgentiLoadout
-  price: 200
+  price: 75
   storage:
     back:
     - WeaponRevolverArgenti
 
 - type: loadout #Argenti Ammo
   id: General556x45mmAmmoLoadout
-  price: 100
+  price: 25
   storage:
     back:
     - BoxMagazineSpeedLoader556x45mmFMJ
@@ -89,7 +89,7 @@
 
 - type: loadout #Beanbag Shells
   id: GeneralBeanbagAmmoLoadout
-  price: 200
+  price: 50
   storage:
     back:
     - AmmoBox12_gaugeBeanbag

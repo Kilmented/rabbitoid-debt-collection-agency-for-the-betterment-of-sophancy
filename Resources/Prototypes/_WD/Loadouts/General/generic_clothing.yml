@@ -545,15 +545,9 @@
   - ContractorClothingHeadsetCargoCommon
   - ContractorClothingHeadsetMiningCommon
   - ContractorClothingHeadsetEngineeringCommon
-  - ContractorClothingHeadsetMedicalCommon
-  - ContractorClothingHeadsetScienceCommon
-  - ContractorClothingHeadsetMedicalScienceCommon
-  - ContractorClothingHeadsetRoboticsCommon
   - ContractorClothingHeadsetServiceCommon
   - ContractorClothingHeadsetAltCargoCommon
   - ContractorClothingHeadsetAltEngineeringCommon
-  - ContractorClothingHeadsetAltMedicalCommon
-  - ContractorClothingHeadsetAltScienceCommon
   fallbacks:
   - ContractorClothingHeadsetGreyCommon
 
@@ -641,7 +635,7 @@
   - ContractorClothingNeckMantleCE
   - ContractorClothingNeckCloakVoid
   - ContractorClothingNeckBling
-  - ContractorClothingNeckArmbandUNSA
+#  - ContractorClothingNeckArmbandUNSA # Wicce
   - ContractorClothingNeckMantleBH
   - ContractorClothingNeckCloakSanabi
   - ContractorClothingNeckUIOvercoat

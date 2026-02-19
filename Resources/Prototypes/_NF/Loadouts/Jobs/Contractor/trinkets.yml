@@ -120,7 +120,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 5000 # Mono
+  price: 50 # Mono # Wicce
   storage:
     back:
     - CigarGoldCase
@@ -162,7 +162,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 5000 # Mono
+  price: 50 # Mono # Wicce
   storage:
     back:
     - FlippoEngravedLighter
@@ -262,7 +262,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT2
-  price: 600
+  price: 0 # Wicce
   storage:
     back:
     - CrayonBox
@@ -282,21 +282,21 @@
 #T3 for lols
 - type: loadout
   id: ContractorWristwatchGold
-  price: 2500
+  price: 400 # Wicce
   storage:
     back:
     - WristwatchGold
 
 - type: loadout
   id: ContractorSilverRing
-  price: 2750
+  price: 275 # Wicce
   storage:
     back:
     - SilverRing
 
 - type: loadout
   id: ContractorGoldRing
-  price: 3000
+  price: 300 # Wicce
   storage:
     back:
     - GoldRing

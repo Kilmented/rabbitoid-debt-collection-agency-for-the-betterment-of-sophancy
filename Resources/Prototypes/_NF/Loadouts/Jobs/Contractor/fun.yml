@@ -137,7 +137,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 1000 # Mono
+  price: 100 # Mono # Wicce
   inhand:
     - HoloGraffitiProjector
 
@@ -164,7 +164,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 10000 # Mono
+  price: 1000 # Mono # Wicce
   inhand:
     - HoverbikeFlatpack
 
@@ -174,7 +174,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 2000 # Mono
+  price: 200 # Mono # Wicce
   inhand:
     - PetCarrierNPCEmotionalSupportSafe
 

@@ -12,6 +12,7 @@
   icon: "JobIconResearchDirector"
   supervisors: job-supervisors-nobles
   canBeAntag: false
+  startingGear: ProvostGear
   accessGroups:
   - ProvostAccess
   special:
