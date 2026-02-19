@@ -15,7 +15,7 @@
 
 - type: entity
   parent: NFClothingHeadHardsuitWithLightBase
-  id: ClothingOuterHardsuitEcclesiaVicar
+  id: ClothingHeadHelmetEcclesiaVicar
   name: Ecclesia Vicar hardsuit helmet
   description: An Eccelsia branded hardsuit helmet, designed for use by the Vicar. Armored and lightweight, with welding protection.
   components:
@@ -36,12 +36,6 @@
   - type: FireProtection
     reduction: 0.7
   - type: Armor
-    traumaDeductions:
-      Dismemberment: 0.5
-      OrganDamage: 0.5
-      BoneDamage: 0.5
-      VeinsDamage: 0
-      NerveDamage: 0
     modifiers:
       coefficients:
         Blunt: 0.9
@@ -68,7 +62,7 @@
     - Recyclable
 
 - type: entity
-  parent: [ClothingHeadHeadHatBaseFlipped, ClothingHeadHatParamedicCybersun]
+  parent: [ClothingHeadHeadHatBaseFlipped, ClothingHeadHatParamedicEcclesia]
   id: ClothingHeadHatParamedicEcclesiaFlipped
   name: Ecclesia Paramedic cap
   components:
