@@ -21,8 +21,6 @@
   - ContractorClothingUniformJumpskirtHydroponics
   - ContractorClothingUniformJumpsuitMedicalDoctor
   - ContractorClothingUniformJumpskirtMedicalDoctor
-  - ContractorClothingUniformJumpsuitScientist
-  - ContractorClothingUniformJumpskirtScientist
   - ContractorClothingUniformJumpsuitColorWhite
   - ContractorClothingUniformJumpskirtColorWhite
   - ContractorClothingUniformJumpsuitColorBlack
@@ -86,9 +84,6 @@
   - ContractorClothingUniformJumpskirtGenetics
   - ContractorClothingUniformJumpsuitPsychologist
   - ContractorClothingUniformJumpskirtPsychologist
-  - ContractorClothingUniformJumpsuitScientistFormal
-  - ContractorClothingUniformJumpsuitRoboticist
-  - ContractorClothingUniformJumpskirtRoboticist
   - ContractorClothingUniformJumpsuitLawyerBlue
   - ContractorClothingUniformJumpskirtLawyerBlue
   - ContractorClothingUniformJumpsuitLawyerPurple
@@ -118,8 +113,8 @@
   - ContractorClothingUniformJumpsuitChaplainPilgrimVest
   - ContractorClothingUniformJumpsuitQMTurtleneck
   - ContractorClothingUniformJumpskirtQMTurtleneck
-  - ContractorClothingUniformJumpsuitSeniorPhysician
-  - ContractorClothingUniformJumpskirtSeniorPhysician
+#  - ContractorClothingUniformJumpsuitSeniorPhysician
+#  - ContractorClothingUniformJumpskirtSeniorPhysician
   #- ContractorClothingUniformJumpsuitCMO # Temp removed for MOM. Will return if replaced.
   #- ContractorClothingUniformJumpskirtCMO # Temp removed for MOM. Will return if replaced. #
   #- ContractorClothingUniformTurtleneckCMO # Temp removed for MOM. Will return if replaced. #
@@ -163,8 +158,6 @@
   - ContractorClothingUniformJumpsuitMilitaryVirology
   - ContractorClothingUniformJumpsuitMilitaryGenetics
  # - ContractorClothingUniformJumpsuitMilitaryCMO # Temp removed for MOM. Will return if replaced.
-  - ContractorClothingUniformJumpsuitMilitaryScientist
-  - ContractorClothingUniformJumpsuitMilitaryResearchDirector
   - ContractorClothingUniformJumpsuitMilitaryService
   - ContractorClothingUniformJumpsuitMilitaryHydroponics
   - ContractorClothingUniformJumpsuitMilitaryColorGrey
@@ -224,10 +217,6 @@
   - ContractorClothingBackpackDuffelHydroponics
   - ContractorClothingBackpackSatchelHydroponics
   - ContractorClothingBackpackMessengerHydroponics
-  - ContractorClothingBackpackScience
-  - ContractorClothingBackpackDuffelScience
-  - ContractorClothingBackpackSatchelScience
-  - ContractorClothingBackpackMessengerScience
   - ContractorClothingBackpackMedical
   - ContractorClothingBackpackDuffelMedical
   - ContractorClothingBackpackSatchelMedical
@@ -307,8 +296,6 @@
   - ContractorClothingOuterCoatLab
   - ContractorClothingOuterCoatLabGene
   - ContractorClothingOuterCoatLabChem
-  # - ContractorClothingOuterCoatLabRnd
-  - ContractorClothingOuterCoatRobo
   - ContractorClothingOuterCoatLabViro
   - ContractorClothingOuterBioScientist
   - ContractorClothingOuterWinterCoat
@@ -327,8 +314,6 @@
   - ContractorClothingOuterCoatParamedicWB
   - ContractorClothingOuterWinterPara
   - ContractorClothingOuterWinterGen
-  - ContractorClothingOuterWinterSci
-  - ContractorClothingOuterWinterRobo
   - ContractorClothingOuterWinterViro
   - ContractorClothingOuterWinterClown
   - ContractorClothingOuterWinterMime
@@ -337,9 +322,7 @@
 #  - ContractorClothingOuterWinterCMO # Temp removed for MOM. Will return if replaced.
   - ContractorClothingOuterWinterCE
 #  - ContractorClothingOuterCoatLabCmo # Temp removed for MOM. Will return if replaced.
-  - ContractorClothingOuterCoatLabSeniorPhysician
-  - ContractorClothingOuterCoatRD
-  - ContractorClothingOuterCoatLabSeniorResearcher
+#  - ContractorClothingOuterCoatLabSeniorPhysician
   - ContractorClothingOuterFlannelRed
   - ContractorClothingOuterFlannelBlue
   - ContractorClothingOuterFlannelGreen
@@ -437,8 +420,6 @@
   - ContractorClothingShoesBootsWinterGenetics
   - ContractorClothingShoesBootsWinterMiner
   - ContractorClothingShoesBootsWinterParamedic
-  - ContractorClothingShoesBootsWinterRobo
-  - ContractorClothingShoesBootsWinterSci
   - ContractorClothingShoesBootsWinterViro
   - ContractorClothingShoesBootsJack
   - ContractorClothingShoesLeather
@@ -515,7 +496,7 @@
   - ContractorClothingHeadHatFedoraBrown
   - ContractorClothingHeadTinfoil
   - ContractorClothingHeadHatBeretEngineering
-  - ContractorClothingHeadHatBeretSeniorPhysician
+#  - ContractorClothingHeadHatBeretSeniorPhysician
 #  - ContractorClothingHeadHatBeretCmo # Temp removed for MOM. Will return if replaced.
   - ContractorClothingHeadHatBeretQM
   - ContractorClothingHeadHatQMsoft
@@ -586,7 +567,6 @@
   - ContractorClothingHandsGlovesFingerless
   - ContractorClothingHandsGlovesLatex
   - ContractorClothingHandsGlovesNitrile
-  - ContractorClothingHandsGlovesRobohands
   - ContractorClothingHandsGlovesColorBlack
   - ContractorClothingHandsGlovesColorBlue
   - ContractorClothingHandsGlovesColorGreen
@@ -686,14 +666,11 @@
 #  - ContractorParamedicPDA
 #  - ContractorPsychologistPDA
 #  - ContractorChemistryPDA
-#  - ContractorSciencePDA
   - ContractorReporterPDA
   - ContractorZookeeperPDA
 #  - ContractorEngineerPDA
 #  - ContractorAtmosPDA
 #  - ContractorQuartermasterPDA
-#  - ContractorSeniorResearcherPDA
-#  - ContractorRnDPDA
 #  - ContractorSeniorPhysicianPDA
 #  #- ContractorCMOPDA # Temp removed for MOM. Will return if replaced.
 #  - ContractorSeniorEngineerPDA

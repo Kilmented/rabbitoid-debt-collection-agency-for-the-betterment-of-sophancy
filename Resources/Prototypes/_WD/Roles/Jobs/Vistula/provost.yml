@@ -51,13 +51,13 @@
   - ProvostJumpsuit
   - VistulaGloves
   - VistulaBackpack
-  - GeneralOuterClothing
+  - ProvostOuterClothing
   - VistulaShoes
   - GeneralFace
   - GeneralGlasses
   - GeneralBelt
 #  - VistulaEars # Commented this out because it's filled by the StartingGear component.
-  - GeneralBoxSurvival
+  - ContractorBoxSurvival
 #  - VistulaPDA # Commented this out because it's filled by the StartingGear component.
   - GeneralWallet
   - GeneralCartridge
