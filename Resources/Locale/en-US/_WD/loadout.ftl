@@ -33,6 +33,7 @@ loadout-group-ecclesia-shoes = Shoes (Ecclesia)
 
 loadout-group-vistula-jumpsuit = Jumpsuit (VI:ROA)
 loadout-group-vistula-backpack = Backpack (VI:ROA)
+loadout-group-vistula-outer-clothing = Outer Clothing (VI:ROA)
 loadout-group-vistula-id = ID+PDA (VI:ROA)
 loadout-group-vistula-ears = Ears (VI:ROA)
 loadout-group-vistula-shoes = Shoes (VI:ROA)
@@ -74,6 +75,8 @@ loadout-group-vicar-neck = Neck (Vicar)
 loadout-group-vicar-head = Head (Vicar)
 
 loadout-group-provost-jumpsuit = Jumpsuit (Provost)
+loadout-group-provost-outer-clothing = Outer Clothing (Provost)
+loadout-group-provost-id = ID+PDA (Provost)
 
 loadout-group-marshal-jumpsuit = Jumpsuit (Marshal)
 loadout-group-marshal-backpack = Backpack (Marshal)

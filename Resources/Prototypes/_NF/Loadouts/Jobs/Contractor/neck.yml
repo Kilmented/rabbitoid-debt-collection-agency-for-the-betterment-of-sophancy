@@ -564,6 +564,6 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT3
-  price: 7500
+  price: 750
   equipment:
     neck: ClothingNeckBling

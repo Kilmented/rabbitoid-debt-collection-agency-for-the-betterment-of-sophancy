@@ -8,6 +8,7 @@
     time: 3600 # 1 hr
   guides: [ VistulaInstitute ]
   icon: "JobIconRoboticist"
+  startingGear: MechanitorGear
   supervisors: job-supervisors-provost
   accessGroups:
   - VistulaAccess
@@ -37,8 +38,8 @@
   - VistulaJumpsuit
   - VistulaGloves
   - VistulaBackpack
-  - GeneralOuterClothing
-  - GeneralShoes
+  - VistulaOuterClothing
+  - VistulaShoes
   - GeneralFace
   - GeneralGlasses
   - GeneralBelt

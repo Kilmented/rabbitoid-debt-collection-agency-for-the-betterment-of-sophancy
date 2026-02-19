@@ -584,7 +584,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT2
-  price: 1100
+  price: 0 # Wicce
   equipment:
     head: ClothingHeadHatUNSABeer
 

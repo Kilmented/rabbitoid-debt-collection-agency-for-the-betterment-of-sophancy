@@ -55,7 +55,7 @@
   - GeneralGlasses
   - GeneralBelt
 #  - EcclesiaEars # Commented this out because it's filled by the StartingGear component.
-  - GeneralBoxSurvival
+  - ContractorBoxSurvival
   - EcclesiaPDA
   - GeneralWallet
   - GeneralCartridge

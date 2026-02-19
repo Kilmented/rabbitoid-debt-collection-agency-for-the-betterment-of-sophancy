@@ -3,27 +3,29 @@
   id: VistulaJumpsuit
   name: loadout-group-vistula-jumpsuit
   loadouts:
-  - MedicalDoctorJumpsuit
-  - MedicalDoctorJumpskirt
-  - MedicalBlueScrubs
-  - MedicalGreenScrubs
-  - MedicalPurpleScrubs
-  - ContractorClothingUniformJumpsuitSeniorPhysician
-  - ContractorClothingUniformJumpskirtSeniorPhysician
-  - ContractorClothingUniformJumpsuitParamedic
-  - ContractorClothingUniformJumpskirtParamedic
-  - ContractorClothingUniformJumpsuitVirology
-  - ContractorClothingUniformJumpskirtVirology
-  - ContractorClothingUniformJumpsuitChemistry
-  - ContractorClothingUniformJumpskirtChemistry
-  - ContractorClothingUniformJumpsuitGenetics
-  - ContractorClothingUniformJumpskirtGenetics
-  - ContractorClothingUniformJumpsuitPsychologist
-  - ContractorClothingUniformJumpskirtPsychologist
+  - ContractorClothingUniformJumpsuitScientist
+  - ContractorClothingUniformJumpskirtScientist
+  - ContractorClothingUniformJumpsuitScientistFormal
+  - ContractorClothingUniformJumpsuitRoboticist
+  - ContractorClothingUniformJumpskirtRoboticist
+  - ContractorClothingUniformJumpsuitMilitaryScientist
   subgroups:
   - GeneralJumpsuit
   fallbacks:
-  - MedicalDoctorJumpsuit
+  - ContractorClothingUniformJumpsuitScientist
+
+- type: loadoutGroup
+  id: VistulaOuterClothing
+  name: loadout-group-vistula-outer-clothing
+  loadouts:
+  - ContractorClothingOuterCoatLab # Reused on purpose.
+  - ContractorClothingOuterCoatRobo
+  - ContractorClothingOuterWinterSci
+  - ContractorClothingOuterWinterRobo
+  subgroups:
+  - GeneralOuterClothing
+  fallbacks:
+  - ContractorClothingOuterCoatLab
 
 - type: loadoutGroup
   id: VistulaHead
@@ -38,11 +40,10 @@
   id: VistulaBackpack
   name: loadout-group-vistula-backpack
   loadouts:
-  - MdMedicClothingModsuitParamedicPowerCell
-  - DocClothingBackpackMedical
-  - DocClothingBackpackDuffelMedical
-  - DocClothingBackpackSatchelMedical
-  - DocClothingBackpackMessengerMedical
+  - ContractorClothingBackpackScience
+  - ContractorClothingBackpackDuffelScience
+  - ContractorClothingBackpackSatchelScience
+  - ContractorClothingBackpackMessengerScience
   subgroups:
   - GeneralBackpack
   fallbacks:
@@ -52,10 +53,10 @@
   id: VistulaPDA
   name: loadout-group-vistula-id
   loadouts:
-  - MedicalDoctorPDA
-  - ContractorSeniorPhysicianPDA
+  - ContractorSciencePDA
+  - ContractorRnDPDA
   fallbacks:
-  - MdMedicMedicalPDA
+  - ContractorSciencePDA
 
 - type: loadoutGroup
   id: VistulaEars
@@ -73,6 +74,7 @@
   loadouts:
   - NitrileGloves
   - LatexGloves
+  - ContractorClothingHandsGlovesRobohands
 
 - type: loadoutGroup
   id: VistulaNeck
@@ -83,17 +85,18 @@
   subgroups:
   - GeneralNeck
 
-
 - type: loadoutGroup
   id: VistulaShoes
   name: loadout-group-vistula-shoes
   loadouts:
-  - DocClothingShoesColorWhite
-  - StcClothingShoesBootsLaceup
+  - ContractorClothingShoesColorWhite
+  - ContractorClothingShoesBootsLaceup
+  - ContractorClothingShoesBootsWinterRobo
+  - ContractorClothingShoesBootsWinterSci
   subgroups:
   - GeneralShoes
   fallbacks:
-  - DocClothingShoesColorWhite
+  - ContractorClothingShoesColorWhite
 
 # Job Specific
 
@@ -105,8 +108,25 @@
   - ContractorClothingUniformJumpskirtSeniorResearcher
   - ContractorClothingUniformJumpsuitResearchDirector
   - ContractorClothingUniformJumpskirtResearchDirector
+  - ContractorClothingUniformJumpsuitMilitaryResearchDirector
   subgroups:
   - GeneralJumpsuit
   fallbacks:
   - ContractorClothingUniformJumpsuitSeniorResearcher
-  - ContractorClothingUniformJumpskirtSeniorResearcher
+
+- type: loadoutGroup
+  id: ProvostOuterClothing
+  name: loadout-group-provost-outer-clothing
+  loadouts:
+  - ContractorClothingOuterCoatLabSeniorResearcher
+  - ContractorClothingOuterCoatRD
+  subgroups:
+  - GeneralOuterClothing
+
+- type: loadoutGroup
+  id: ProvostPDA
+  name: loadout-group-provost-id
+  loadouts:
+  - ContractorSeniorResearcherPDA
+  fallbacks:
+  - ContractorSciencePDA

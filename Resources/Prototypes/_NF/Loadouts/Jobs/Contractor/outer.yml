@@ -33,7 +33,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT1
-  price: 7500
+  price: 500 # Wicce
   equipment:
     outerClothing: ClothingOuterHardsuitUllmanEngineer
 
@@ -42,7 +42,7 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT1
-  price: 7500
+  price: 500 # Wicce
   equipment:
     outerClothing: ClothingOuterHardsuitUIPilot
 
