@@ -17246,3 +17246,13 @@ Entries:
   id: 1905
   time: '2026-02-22T01:23:41.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3259
+- author: Helicaste
+  changes:
+    - type: Tweak
+      message: >-
+        Shuttle event spawns (ADS, Asakim, Chimera) have had their spawn timers
+        tweaked. You will now see the Wyvern, Asakim, and Chimera earlier into
+        each round. Prepare carefully, for the horde is coming.
+  id: 1906
+  time: '2026-02-22T02:35:27.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3265
