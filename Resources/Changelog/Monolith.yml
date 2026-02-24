@@ -17335,3 +17335,10 @@ Entries:
   id: 1915
   time: '2026-02-23T16:06:55.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3273
+- author: Helicaste
+  changes:
+    - type: Fix
+      message: 'Carrion suit storage is properly oriented. '
+  id: 1916
+  time: '2026-02-24T04:31:52.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3284
