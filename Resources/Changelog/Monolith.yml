@@ -17342,3 +17342,12 @@ Entries:
   id: 1916
   time: '2026-02-24T04:31:52.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3284
+- author: Kiithnaras
+  changes:
+    - type: Fix
+      message: >-
+        Fixed Watchdog Respirator states being drawn reversed to their
+        mechanical state on Hydrakin.
+  id: 1917
+  time: '2026-02-24T12:49:18.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3281
