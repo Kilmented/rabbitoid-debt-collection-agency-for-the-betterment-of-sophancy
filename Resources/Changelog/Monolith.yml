@@ -17376,3 +17376,10 @@ Entries:
   id: 1920
   time: '2026-02-24T18:57:45.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3275
+- author: Loldaddy5676
+  changes:
+    - type: Add
+      message: Added 9x19mm smg mags to the MLA smg for spasakas to load up on.
+  id: 1921
+  time: '2026-02-24T19:00:22.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3279
