@@ -67,6 +67,8 @@
   id: ShipVoucherCommonerStarter
   name: Commoner's Guild LPC
   description: A small card that contains the data and materials for the flashforge of a Guild branded ship from the Arion's Ship-grade Nanoforge.
-  vessels: # Just starting vessels, please.
-  - Scarab
-  - SophantPiva
+  components:
+  - type: ShipyardVoucher
+    vessels: # Just starting vessels, please.
+    - Scarab
+    - SophantPiva
