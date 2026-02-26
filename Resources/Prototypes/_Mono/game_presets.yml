@@ -76,8 +76,8 @@
   - BluespaceSalvageEventScheduler
 #  - SmugglingEventScheduler # Wicce: Smuggle what, my dear? We're all on the same side here.
   - FrontierRoundstartVariation
-  - MonoAISTCShuttleSpawnerScheduler
-  - MonoAISTCShuttleSpawnerSchedulerTier2
+#  - MonoAISTCShuttleSpawnerScheduler
+#  - MonoAISTCShuttleSpawnerSchedulerTier2
 #  - MonoAsakimSTCShuttleSpawnerScheduler # Wicce: Named alien races are no bueno. Pending generification rework.
   - MonoMonolithicEventsScheduler
 
