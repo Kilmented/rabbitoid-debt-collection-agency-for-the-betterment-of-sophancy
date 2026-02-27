@@ -1,40 +1,49 @@
 # Author Info
-# GitHub: UnicornOnLSD
-# Discord: UnicornOnLSD
+# GitHub: starch70
+# Discord: _starch_
 
-# Notes: UnicornOnLSD has no relation to Wicce's Den in any way, nor does Wicce's Den make any claims to the content of this file nor the map file.
+# Maintainer Info
+# GitHub: Kilmented
+# Discord: Jaegurt
 
 - type: pointOfInterest
-  id: MechHiveOutpost
-  parent: BasePOI
+  id: Karkinos
+  parent: [BaseMobilePOI, BaseRepairablePOI]
   name: "Hivefleet Carrier 'Karkinos'"
-  minimumDistance: 13500
-  maximumDistance: 16500
+  minimumDistance: 17000
+  maximumDistance: 19000
+  spawnGamePreset: [ NFAdventure, NFPirate, MonoStandard, MonoRogueTSF, MonoRogueUSSP, MonoADS, MonoChimera, MonoMixed, MonoAllAtOnce ]
   spawnGroup: Required
   gridPath: /Maps/_WD/POI/karkinos.yml
   addComponents:
-  - type: SolarPoweredGrid
-    trackOnInit: true
-    doNotCull: true
+  - type: IFF
+    color: "#d1bf58"
+    flags: [HideLabel]
+    readOnly: false
 
 - type: gameMap
-  id: MechHiveOutpost
+  id: Karkinos
   mapName: "Hivefleet Carrier 'Karkinos'"
   mapPath: /Maps/_WD/POI/karkinos.yml
   minPlayers: 0
   stations:
-    DragonsBreathRefinery:
-      stationProto: MarketFrontierOutpost
+    Karkinos:
+      stationProto: RecordsFrontierOutpostCargo
       components:
-        - type: StationNameSetup
-          mapNameTemplate: "Hivefleet Carrier 'Karkinos'"
-        - type: ExtraStationInformation
-          iconPath: /Textures/_Mono/Objects/Misc/lpc.rsi/mtech.png
-          stationSubtext: 'mechhive-subtext'
-          stationDescription: 'mechhive-description'
-          lobbySortOrder: 6
-#        - type: StationJobs
-#          availableJobs:
-#            DIEmployee: [-1, -1]
-#          tags:
-#          - DI
+      - type: StationNameSetup
+        mapNameTemplate: "Hivefleet Carrier 'Karkinos'"
+      - type: ExtraStationInformation
+        iconPath: /Textures/_Mono/Objects/Misc/lpc.rsi/mtech.png
+        stationSubtext: 'mechhive-subtext'
+        stationDescription: 'mechhive-description'
+        lobbySortOrder: 2
+#      - type: StationJobs
+#        availableJobs:
+#          PirateFirstMate: [ 1, 1 ] # Mono
+#          PDVDenasvar: [ 2, 2 ]
+#          Pirate: [ 8, 8 ] # Mono
+#        tags:
+#        - PDVCommand
+#      - type: StationDeadDropReporting
+#        messageSet: Pirate
+      - type: StationDeadDropHintExempt
