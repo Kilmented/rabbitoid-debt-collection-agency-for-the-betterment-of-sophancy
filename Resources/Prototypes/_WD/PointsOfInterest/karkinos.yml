@@ -7,11 +7,11 @@
 - type: pointOfInterest
   id: MechHiveOutpost
   parent: BasePOI
-  name: "Mechanoid Hive Outpost"
+  name: "Hivefleet Carrier 'Karkinos'"
   minimumDistance: 13500
   maximumDistance: 16500
   spawnGroup: Required
-  gridPath: /Maps/_WD/POI/mechhive.yml
+  gridPath: /Maps/_WD/POI/karkinos.yml
   addComponents:
   - type: SolarPoweredGrid
     trackOnInit: true
@@ -19,15 +19,15 @@
 
 - type: gameMap
   id: MechHiveOutpost
-  mapName: "Mechanoid Hive Outpost"
-  mapPath: /Maps/_WD/POI/mechhive.yml
+  mapName: "Hivefleet Carrier 'Karkinos'"
+  mapPath: /Maps/_WD/POI/karkinos.yml
   minPlayers: 0
   stations:
     DragonsBreathRefinery:
       stationProto: MarketFrontierOutpost
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Mechanoid Hive Outpost'
+          mapNameTemplate: "Hivefleet Carrier 'Karkinos'"
         - type: ExtraStationInformation
           iconPath: /Textures/_Mono/Objects/Misc/lpc.rsi/mtech.png
           stationSubtext: 'mechhive-subtext'
