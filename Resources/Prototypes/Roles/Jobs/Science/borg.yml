@@ -35,3 +35,10 @@
   supervisors: job-supervisors-hire # Frontier
   jobEntity: PlayerBorgBattery
   applyTraits: false
+
+#WICCE ADD: Borg starting iD
+- type: startingGear
+  id: BorgGear
+  equipment:
+    id: ContractorPDA
+#END WICCE
