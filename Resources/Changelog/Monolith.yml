@@ -17760,3 +17760,10 @@ Entries:
   id: 1956
   time: '2026-03-03T18:03:33.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3328
+- author: DevArchwave
+  changes:
+    - type: Add
+      message: More roles now have access to the tools roundstart loadout.
+  id: 1957
+  time: '2026-03-03T18:11:14.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3321
