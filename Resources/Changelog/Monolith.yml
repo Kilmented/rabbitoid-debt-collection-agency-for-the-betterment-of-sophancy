@@ -17781,3 +17781,10 @@ Entries:
   id: 1959
   time: '2026-03-03T19:08:33.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3303
+- author: freturt
+  changes:
+    - type: Tweak
+      message: Buffed T-53
+  id: 1960
+  time: '2026-03-03T20:32:58.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3318
