@@ -17767,3 +17767,10 @@ Entries:
   id: 1957
   time: '2026-03-03T18:11:14.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3321
+- author: UnicornOnLSD
+  changes:
+    - type: Tweak
+      message: DIS Femur has been given a merc techfab instead of it's ammo loader
+  id: 1958
+  time: '2026-03-03T18:17:29.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3315
