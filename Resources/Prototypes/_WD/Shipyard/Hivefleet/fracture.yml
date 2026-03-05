@@ -2,9 +2,9 @@
   id: HivefleetFracture
   parent: BaseVessel
   name: Fracture
-  description: A hivefleet brawler armed with heavy kinetic cannons.
+  description: A brawler armed with heavy kinetic cannons.
   purchasable: false # voucher only
-  price: 64000
+  price: 999999
   category: Small
   group: Hive
   shuttlePath: /Maps/_WD/Shuttles/Hivefleet/fracture.yml

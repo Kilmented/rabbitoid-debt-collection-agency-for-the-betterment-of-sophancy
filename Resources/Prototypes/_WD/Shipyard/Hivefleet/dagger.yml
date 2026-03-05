@@ -2,9 +2,9 @@
   id: HivefleetDagger
   parent: BaseVessel
   name: Dagger
-  description: A hivefleet fighter designed to destroy critical infrastructure at long range.
+  description: A long range fighter designed to destroy critical infrastructure.
   purchasable: false # voucher only
-  price: 64000
+  price: 999999
   category: Small
   group: Hive
   shuttlePath: /Maps/_WD/Shuttles/Hivefleet/dagger.yml

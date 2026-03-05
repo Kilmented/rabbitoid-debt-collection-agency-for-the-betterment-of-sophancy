@@ -167,6 +167,8 @@
   - MiniStationAnchorCircuitboard # Frontier
   - SmallThrusterMachineCircuitboard # Frontier
   - SmallGyroscopeMachineCircuitboard # Frontier
+
+  - ShipVoucherCommonerSizeOne # Wicce
   technologyPrerequisites:
   - AdvancedParts
   position: -5, 7
@@ -214,7 +216,7 @@
   - ShipRepairDevice
   - ShipRepairDeviceAmmo
   - NFBlueprintRCDAmmo
-  # Mono edit end 
+  # Mono edit end
   technologyPrerequisites:
   - SuperParts
   position: -1, 18

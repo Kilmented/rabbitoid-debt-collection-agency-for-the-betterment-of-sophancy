@@ -1,0 +1,60 @@
+﻿#- type: latheRecipe
+#  abstract: true
+#  id: BaseElectronicsRecipe
+#  categories:
+#  - Circuitry
+#  completetime: 2
+#  materials:
+#    Steel: 100
+#    Plastic: 300
+#
+#- type: latheRecipe
+#  abstract: true
+#  parent: BaseElectronicsRecipe
+#  id: BaseCircuitboardRecipe
+#  completetime: 4
+#  materials:
+#    Steel: 100
+#    Glass: 500
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseCircuitboardRecipe
+  id: BaseLpcRecipe
+  materials:
+    Steel: 40000
+    Glass: 10000
+    Gold: 10000
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseLpcRecipe
+  id: BaseLpcRecipeSizeTwo
+  materials:
+    Steel: 60000
+    Glass: 15000
+    Gold: 15000
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseLpcRecipe
+  id: BaseLpcRecipeSizeThree
+  materials:
+    Steel: 90000
+    Glass: 22500
+    Gold: 22500
+
+- type: latheRecipe
+  parent: BaseLpcRecipe
+  id: ShipVoucherCommonerSizeOne
+  result: ShipVoucherCommonerSizeOne
+
+- type: latheRecipe
+  parent: BaseLpcRecipeSizeTwo
+  id: ShipVoucherCommonerSizeTwo
+  result: ShipVoucherCommonerSizeTwo
+
+- type: latheRecipe
+  parent: BaseLpcRecipeSizeThree
+  id: ShipVoucherCommonerSizeThree
+  result: ShipVoucherCommonerSizeThree
