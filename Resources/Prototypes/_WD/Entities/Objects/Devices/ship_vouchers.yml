@@ -12,8 +12,8 @@
 - type: entity
   parent: BaseShipLPC
   id: ShipVoucherKnight
-  name: Nymphknight LPC
-  description: A small card that contains the data and materials for the flashforge of a Nymphknight ship from the Ship-grade Nanoforge aboard the Arion.
+  name: Knight LPC
+  description: A small card that contains the data and materials for the flashforge of a Knight branded ship from the Arion's Ship-grade Nanoforge.
   components:
   - type: Sprite
     layers:
