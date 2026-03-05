@@ -1,16 +1,19 @@
-Wicce's Keep is melancholic, intimate, and hardcore [Monolith](https://github.com/Monolith-Station/Monolith) fork focused on immersion and atmosphere. 
+## About
+Note: This repository contains 18+ content that is not suitable for those underage.
+
+Wicce's Den is a melancholic, intimate, hardcore, Nobledark fork of [Monolith](https://github.com/Monolith-Station/Monolith) that simultaneously dials back the personal focus of Frontier and puts a lighter spin on the Team Deathmatch elements of Monolith. 
 
 Monolith is a fork of [Frontier](https://github.com/new-frontiers-14/frontier-station-14) that runs on the [Robust Toolbox](https://github.com/space-wizards/RobustToolbox) engine written in C#.
 
 ## Links
 
-Nothing here!
+Wicce's Den Discord: https://discord.gg/dCEZH9DSnG
 
 ## Contributing
 
 We are happy to accept contributions from anybody. Get in Discord if you want to help. Don't be afraid to ask for help either!
 
-We are not currently accepting translations of the game on our main repository. If you would like to translate the game into another language consider creating a fork or contributing to a fork.
+We are not currently accepting translations of the game on our main repository.
 
 ## Building
 
@@ -21,7 +24,6 @@ We provide some scripts shown below to make the job easier.
 
 > - Git
 > - .NET SDK 9.0.101
-
 
 ### Windows
 
