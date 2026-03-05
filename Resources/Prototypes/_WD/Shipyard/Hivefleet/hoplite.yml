@@ -2,9 +2,9 @@
   id: HivefleetHoplite
   parent: BaseVessel
   name: Hoplite
-  description: A hivefleet heavy fighter armed with a menacing array of plasma weaponry.
+  description: A heavy fighter armed with a menacing array of plasma weaponry.
   purchasable: false # voucher only
-  price: 64000
+  price: 999999
   category: Small
   group: Hive
   shuttlePath: /Maps/_WD/Shuttles/Hivefleet/hoplite.yml
