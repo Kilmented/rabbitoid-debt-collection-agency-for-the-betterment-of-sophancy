@@ -47,24 +47,27 @@
     redemptionsLeft: 9999 # Effectively infinite.
     destroyOnEmpty: false
     consoleType: Commoner
-    vessels: # Unless it's special, put the whole roster in!
+    vessels: # Unless it's special, put the whole roster in! In the order of how they appear below.
+    # Size 1s / Starters
     - Scarab
-    - SophantAkula
+    - SophantPiva
     - SophantSvinya
+    - SophantTick
+    # Size 2s / Midgame (>2 hour mark)
+    - SophantSellsword
+    - SophantTwilight
+    - SophantAkula
     - SophantTayfun
     - SophantNatisk
     - SophantSirius
-    - SophantTick
-    - SophantPiva
-    - SophantSellsword
+    # Size 3s / Endgame (>3 hour mark)
     - SophantMudskipper
-    - SophantTwilight
   - type: StaticPrice
     vendPrice: 500000
 
 - type: entity
   parent: ShipVoucherCommoner
-  id: ShipVoucherCommonerStarter
+  id: ShipVoucherCommonerSizeOne
   name: Commoner's Guild LPC
   description: A small card that contains the data and materials for the flashforge of a Guild branded ship from the Arion's Ship-grade Nanoforge.
   components:
@@ -72,13 +75,39 @@
     vessels: # Just starting vessels, please.
     - Scarab
     - SophantPiva
+    - SophantSvinya
+    - SophantTick
 
+- type: entity
+  parent: ShipVoucherCommoner
+  id: ShipVoucherCommonerSizeTwo
+  name: Commoner's Guild LPC
+  description: A small card that contains the data and materials for the flashforge of a Guild branded ship from the Arion's Ship-grade Nanoforge.
+  components:
+  - type: ShipyardVoucher
+    vessels: # Size 2s only.
+    - SophantSellsword
+    - SophantTwilight
+    - SophantAkula
+    - SophantTayfun
+    - SophantNatisk
+    - SophantSirius
+
+- type: entity
+  parent: ShipVoucherCommoner
+  id: ShipVoucherCommonerSizeThree
+  name: Commoner's Guild LPC
+  description: A small card that contains the data and materials for the flashforge of a Guild branded ship from the Arion's Ship-grade Nanoforge.
+  components:
+  - type: ShipyardVoucher
+    vessels: # Size 3s only.
+    - SophantMudskipper
 
 - type: entity
   parent: BaseShipLPC
   id: BaseShipLPCHive
   name: Mechhive LPC
-  description: A small card that contains the data and materials for the flashforge of a Mechhive ship.
+  description: A small card that contains the data and materials for the flashforge of a Mechhive ship from the Karkinos' automated shipyard.
   components:
   - type: Sprite
     layers:
