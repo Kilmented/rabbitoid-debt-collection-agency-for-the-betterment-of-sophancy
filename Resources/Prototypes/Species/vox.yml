@@ -38,10 +38,10 @@
   onlyWhitelisted: true
   points:
     Hair:
-      points: 1
+      points: 0
       required: false
     FacialHair:
-      points: 1
+      points: 0
       required: false
     Head:
       points: 9 # Wicce
@@ -49,7 +49,7 @@
     Snout:
       points: 9 # Wicce
       required: false # Wicce
-      defaultMarkings: [ VoxBeak ]
+#      defaultMarkings: [ VoxBeak ]
     Arms:
       points: 9 # Wicce
       required: false # Wicce

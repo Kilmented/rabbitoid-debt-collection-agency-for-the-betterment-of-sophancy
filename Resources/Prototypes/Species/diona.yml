@@ -54,8 +54,8 @@
       required: false
     Overlay:
       points: 9 # Wicce
-      required: true
-      defaultMarkings: [ DionaVineOverlay ]
+      required: false # Wicce
+ #     defaultMarkings: [ DionaVineOverlay ]
 
 - type: humanoidBaseSprite
   id: MobDionaEyes
