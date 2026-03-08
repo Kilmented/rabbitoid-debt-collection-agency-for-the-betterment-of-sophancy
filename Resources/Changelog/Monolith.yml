@@ -17997,3 +17997,12 @@ Entries:
   id: 1983
   time: '2026-03-07T11:14:01.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3354
+- author: Corrupt142
+  changes:
+    - type: Add
+      message: >-
+        New ship has appeared on the shipyard console: RSC-Scallywag, hit and
+        run ship dedicated to piracy.
+  id: 1984
+  time: '2026-03-08T11:39:22.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3164
