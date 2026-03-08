@@ -18013,3 +18013,10 @@ Entries:
   id: 1985
   time: '2026-03-08T15:32:56.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3396
+- author: Ilya246
+  changes:
+    - type: Add
+      message: Shuttle consoles now come with autopilot in the map tab.
+  id: 1986
+  time: '2026-03-08T15:56:04.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3394
