@@ -12,21 +12,21 @@ alert-level-unknown-instructions = Unknown.
 alert-level-green = 5 - GREEN
 # alert-level-green-announcement = It is now safe to return to your workplaces.
 # alert-level-green-instructions = Do your job.
-alert-level-green-announcement = The Arion is now considered safe, return to operations as normal.
+alert-level-green-announcement = The Aetos is now considered safe, return to operations as normal.
 alert-level-green-instructions = Sector is safe.
 
 # alert-level-blue = Blue
 alert-level-blue = 4 - BLUE
 # alert-level-blue-announcement = There is a confirmed threat to TSF rogue space. Security should perform random checks. Crewmembers are advised to be vigilant and report suspicious activity.
 # alert-level-blue-instructions = Crewmembers are advised to be vigilant and report suspicious activity.
-alert-level-blue-announcement = There is a threat to the Arion. Crewmembers are advised to be vigilant and report hostile activity.
+alert-level-blue-announcement = There is a threat to the Aetos. Crewmembers are advised to be vigilant and report hostile activity.
 alert-level-blue-instructions = Crewmembers are encouraged to be vigilant and report hostile activity.
 
 # alert-level-red = Red
 alert-level-red = 3-i - RED
 # alert-level-red-announcement = There is an immediate threat to the station. Security should prepare to use lethal force if necessary. Crewmembers should find a safe place to shelter in, and are advised to follow any present authorities.
 # alert-level-red-instructions = Crewmembers should find a safe place to shelter in, and are advised to follow any present authorities.
-alert-level-red-announcement = There is an immediate and significant threat to the Arion. Crewmembers should cooperate to ensure mutual safety.
+alert-level-red-announcement = There is an immediate and significant threat to the Aetos. Crewmembers should cooperate to ensure mutual safety.
 alert-level-red-instructions = Crewmembers should cooperate to ensure mutual safety and must report hostile activity.
 
 # alert-level-violet = Violet
@@ -40,7 +40,7 @@ alert-level-violet-instructions = Crewmembers are advised to limit interaction w
 alert-level-yellow = 3-iii - YELLOW
 # alert-level-yellow-announcement = There is a structural or atmospheric threat within the station. Engineering staff are advised to immediately respond and perform safety measures. Crewmembers are advised to stay away from the threat, and stay in their workplaces if necessary.
 # alert-level-yellow-instructions = Crewmembers are advised to stay away from the threat, and stay in their workplaces if necessary.
-alert-level-yellow-announcement = The Arion's infrastructure has been structurally or atmospherically compromised. Engineering staff are advised to immediately respond and assist where possible. Crewmembers are advised to stay away from the threat and cooperate with the Retinue.
+alert-level-yellow-announcement = The Aetos' infrastructure has been structurally or atmospherically compromised. Engineering staff are advised to immediately respond and assist where possible. Crewmembers are advised to stay away from the threat and cooperate with the Retinue.
 alert-level-yellow-instructions = Crewmembers are advised to stay away from the threat and cooperate with the Retinue.
 
 # alert-level-gamma = Gamma
