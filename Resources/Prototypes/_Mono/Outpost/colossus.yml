@@ -1,7 +1,7 @@
 - type: gameMap
   id: Frontier
   mapName: 'Orbit'
-  mapPath: /Maps/_WD/Outpost/arion.yml # Mono -> Wicce
+  mapPath: /Maps/_WD/Outpost/aetos.yml # Mono -> Wicce
   minPlayers: 0
   maxPlayers: 100
   randomRotation: false
@@ -13,10 +13,10 @@
       - type: VesselMusic
         ambientMusicPrototype: ColossusCentralMusic
       - type: VesselInfo
-        description: "The family of this ship swore fealty to the Crown many, many generations ago." # Wicce
+        description: "A mobile shipyard and carrier in one. The finest the Crown has to offer." # Wicce
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'DTU "Arion"'
+          mapNameTemplate: 'DTU "Aetos"'
 #          nameGenerator:
 #            !type:NanotrasenNameGenerator
 #            prefixCreator: '14'
@@ -34,7 +34,7 @@
             Helmsman: [ 1, 1 ]
             Heir: [ 1, 1 ]
             Steward: [ 1, 1 ]
-            Hand: [ 1, 1 ]
+#            Hand: [ 1, 1 ]
           # KNIGHTS
             Marshal: [ 1, 1 ]
             Knight: [ 3, 3 ]
@@ -42,15 +42,15 @@
           # VISTULA
             Provost: [ 1, 1 ]
             Researcher: [ 3, 3 ]
-            Mechanitor: [ 2, 2 ]
+#            Mechanitor: [ 2, 2 ]
           # ECCLESIA
-            Vicar: [ 1, 1 ]
+#            Vicar: [ 1, 1 ]
             Curate: [ 4, 4 ]
           # COMMONERS
             Rating: [ -1, -1 ]
             Vagabond: [ -1, -1 ]
             FirstEngineer: [ 1 , 1 ]
-            Clerk: [ 1, 1 ]
+#            Clerk: [ 1, 1 ]
           tags:
           - HeadOfPersonnel
           - HeadOfSecurity

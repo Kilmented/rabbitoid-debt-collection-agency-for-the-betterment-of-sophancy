@@ -13,7 +13,7 @@
   parent: BaseShipLPC
   id: ShipVoucherKnight
   name: Knight LPC
-  description: A small card that contains the data and materials for the flashforge of a Knight branded ship from the Arion's Ship-grade Nanoforge.
+  description: A small card that contains the data and materials for the flashforge of a Knight branded ship from the Aetos' Ship-grade Nanoforge.
   components:
   - type: Sprite
     layers:
@@ -36,7 +36,7 @@
   parent: BaseShipLPC
   id: ShipVoucherCommoner
   name: Universal Commoner's Guild LPC
-  description: A small card that contains the data and materials for the flashforge of any Guild branded ship from the Arion's Ship-grade Nanoforge.
+  description: A small card that contains the data and materials for the flashforge of any Guild branded ship from the Aetos' Ship-grade Nanoforge.
   components:
   - type: Sprite
     layers:
@@ -69,7 +69,7 @@
   parent: ShipVoucherCommoner
   id: ShipVoucherCommonerSizeOne
   name: Commoner's Guild Small LPC
-  description: A small card that contains the data and materials for the flashforge of a Guild branded ship from the Arion's Ship-grade Nanoforge.
+  description: A small card that contains the data and materials for the flashforge of a Guild branded ship from the Aetos' Ship-grade Nanoforge.
   components:
   - type: ShipyardVoucher
     vessels: # Just starting vessels, please.
@@ -82,7 +82,7 @@
   parent: ShipVoucherCommoner
   id: ShipVoucherCommonerSizeTwo
   name: Commoner's Guild Medium LPC
-  description: A small card that contains the data and materials for the flashforge of a Guild branded ship from the Arion's Ship-grade Nanoforge.
+  description: A small card that contains the data and materials for the flashforge of a Guild branded ship from the Aetos' Ship-grade Nanoforge.
   components:
   - type: ShipyardVoucher
     vessels: # Size 2s only.
@@ -97,7 +97,7 @@
   parent: ShipVoucherCommoner
   id: ShipVoucherCommonerSizeThree
   name: Commoner's Guild Large LPC
-  description: A small card that contains the data and materials for the flashforge of a Guild branded ship from the Arion's Ship-grade Nanoforge.
+  description: A small card that contains the data and materials for the flashforge of a Guild branded ship from the Aetos' Ship-grade Nanoforge.
   components:
   - type: ShipyardVoucher
     vessels: # Size 3s only.
