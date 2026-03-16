@@ -18188,3 +18188,107 @@ Entries:
   id: 2006
   time: '2026-03-09T23:04:25.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3425
+- author: chuga-git
+  changes:
+    - type: Fix
+      message: >-
+        Wirecutters and Jaws of Life no longer cause spurious messages about
+        claws on use.
+    - type: Tweak
+      message: 'Time to clip claws lowered from 10->4 seconds. '
+  id: 2007
+  time: '2026-03-12T16:35:42.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3431
+- author: Redrover1760
+  changes:
+    - type: Tweak
+      message: 'Fang projectile speed buffed. Old: 170 m/s New: 240 m/s. '
+    - type: Tweak
+      message: 'Fang range increased. Old: 714m New: 1008m.'
+    - type: Tweak
+      message: Fang fires slightly faster, less inaccurate.
+  id: 2008
+  time: '2026-03-12T16:42:06.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3427
+- author: Onezero0
+  changes:
+    - type: Add
+      message: Added more decals for mappers.
+  id: 2009
+  time: '2026-03-13T21:27:17.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3380
+- author: UnicornOnLSD
+  changes:
+    - type: Tweak
+      message: >-
+        (Nearly) All magboots have been made uniform. Rejoice merc players, you
+        now got proper jays
+  id: 2010
+  time: '2026-03-13T22:16:28.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3307
+- author: EldritchPineapple
+  changes:
+    - type: Tweak
+      message: A deep-space tanker has been detected with monolithic activity on board.
+  id: 2011
+  time: '2026-03-14T15:48:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3418
+- author: Corrupt142
+  changes:
+    - type: Tweak
+      message: >-
+        The Scallywag has been misteriously delisted from all public consoles
+        and its origins hastily covered up...
+  id: 2012
+  time: '2026-03-14T15:59:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3439
+- author: UnicornOnLSD
+  changes:
+    - type: Tweak
+      message: >-
+        Pluto MK.II's IFF signature has received tweaks. Report any issues to me
+        on discord (@UnicornOnLSD)
+  id: 2013
+  time: '2026-03-14T19:13:37.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3221
+- author: EldritchPineapple
+  changes:
+    - type: Add
+      message: Added the Spica, fracture replacement and small frontline ship
+    - type: Remove
+      message: Removed fracture, ya served well soldier
+  id: 2014
+  time: '2026-03-15T11:21:12.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3106
+- author: EldritchPineapple
+  changes:
+    - type: Add
+      message: Added the Aldebaran, a new corvette to the tsf shipyards
+    - type: Remove
+      message: Removed the Calypso, rest easy old gal
+  id: 2015
+  time: '2026-03-15T14:13:49.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3174
+- author: Onezero0
+  changes:
+    - type: Add
+      message: Added some more decals for mappers. Search "Greeble" in entityspawn.
+  id: 2016
+  time: '2026-03-15T14:19:46.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3450
+- author: DevArchwave
+  changes:
+    - type: Tweak
+      message: The durability of armor plates can now be examined directly.
+  id: 2017
+  time: '2026-03-15T19:36:04.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3436
+- author: Mrrpip
+  changes:
+    - type: Add
+      message: Adds a Heavy Ammo Case to Mercenary Techfabs.
+    - type: Tweak
+      message: Allows Weapon, Ammo and Explosive cases to scoop items off of the floor.
+  id: 2018
+  time: '2026-03-16T13:45:26.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3455
