@@ -34,7 +34,6 @@
             Helmsman: [ 1, 1 ]
             Heir: [ 1, 1 ]
             Steward: [ 1, 1 ]
-#            Hand: [ 1, 1 ]
           # KNIGHTS
             Marshal: [ 1, 1 ]
             Knight: [ 3, 3 ]
@@ -42,15 +41,12 @@
           # VISTULA
             Provost: [ 1, 1 ]
             Researcher: [ 3, 3 ]
-#            Mechanitor: [ 2, 2 ]
           # ECCLESIA
-#            Vicar: [ 1, 1 ]
+            Vicar: [ 1, 1 ]
             Curate: [ 4, 4 ]
           # COMMONERS
             Rating: [ -1, -1 ]
-            Vagabond: [ -1, -1 ]
             FirstEngineer: [ 1 , 1 ]
-#            Clerk: [ 1, 1 ]
           tags:
           - HeadOfPersonnel
           - HeadOfSecurity

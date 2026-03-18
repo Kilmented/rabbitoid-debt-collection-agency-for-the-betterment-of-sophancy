@@ -7,7 +7,6 @@
   roles:
   - Heir
   - Steward
-  - Hand
   - Helmsman
 
 - type: department
@@ -30,7 +29,6 @@
   roles:
   - Provost
   - Researcher
-  - Mechanitor
 
 - type: department
   id: Ecclesia
@@ -50,8 +48,6 @@
   weight: 1
   roles:
   - Rating
-  - Vagabond
-  - Clerk
   - FirstEngineer
 
 # COLORS

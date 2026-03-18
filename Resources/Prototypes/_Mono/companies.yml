@@ -266,11 +266,12 @@
   - Traildog
   - PH77SER
   - Siege_Of_Malta_Never_Happened
+  disabled: true # Wicce: Syndicate dogs.
 
 - type: company
   id: RedSailCorsairs
   form: Antagonist
-  name: RedSail Corsairs 
+  name: RedSail Corsairs
   description: redsail-corsairs-description
   color: "#930000"
   image: /Textures/_Mono/Companies/redsailcorsairs.png
@@ -293,4 +294,4 @@
   - Ether
   - Fuckaroo
   - Spacepeing
-  - zigcraft 
+  - zigcraft
