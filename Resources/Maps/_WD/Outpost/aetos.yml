@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/16/2026 07:27:52
-  entityCount: 4926
+  time: 03/19/2026 05:01:28
+  entityCount: 4925
 maps:
 - 1
 grids:
@@ -203,9 +203,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
+        Smoke: []
         MetalFoam: []
         Kudzu: []
-        Smoke: []
         Puddle: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -26491,17 +26491,12 @@ entities:
     - type: Transform
       pos: -6.5,-8.5
       parent: 2
-- proto: SpawnPointVagabond
+- proto: SpawnPointVicar
   entities:
-  - uid: 4968
+  - uid: 1462
     components:
     - type: Transform
-      pos: -7.5,4.5
-      parent: 2
-  - uid: 4969
-    components:
-    - type: Transform
-      pos: -1.5,22.5
+      pos: -13.5,12.5
       parent: 2
 - proto: StairStage
   entities:
