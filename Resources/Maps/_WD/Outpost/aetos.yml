@@ -26491,18 +26491,6 @@ entities:
     - type: Transform
       pos: -6.5,-8.5
       parent: 2
-- proto: SpawnPointVagabond
-  entities:
-  - uid: 4968
-    components:
-    - type: Transform
-      pos: -7.5,4.5
-      parent: 2
-  - uid: 4969
-    components:
-    - type: Transform
-      pos: -1.5,22.5
-      parent: 2
 - proto: StairStage
   entities:
   - uid: 43
