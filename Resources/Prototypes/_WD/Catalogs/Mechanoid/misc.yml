@@ -1,0 +1,15 @@
+﻿# Misc. Items that don't fit in the other categories.
+  - type: listing
+    id: UplinkPirateFactionLathe
+    name: uplink-faction-lathe-name
+    description: uplink-faction-lathe-desc
+    productEntity: FactionLatheFlatpack
+    cost:
+      Doubloon: 50
+    categories:
+    - UplinkPirateUtility
+    conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+        - PirateUplink

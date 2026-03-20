@@ -17,4 +17,4 @@ pirate-contraband-pallet-menu-appraisal-label = Estimated Value:{" "}
 pirate-contraband-pallet-menu-count-label = Number of items:{" "}
 pirate-contraband-pallet-appraise-button = Appraise
 pirate-contraband-pallet-sell-button = Sell
-pirate-contraband-pallet-disclaimer = Slot your contraband directly onto the scanner pad. No containers, no games.
+pirate-contraband-pallet-disclaimer = PLACE AN ITEM ON THE PAD TO BE RIPSCANNED. ADDENDUM: CONTAINERS SHIELD YOUR ITEM FROM SCANNING.

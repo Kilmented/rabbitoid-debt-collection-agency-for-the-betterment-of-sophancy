@@ -1,0 +1,80 @@
+﻿#MARK: Equipment
+- type: listing
+  id: UplinkMechanoidUrchin
+  name: uplink-mechanoid-urchin-name
+  description: uplink-mechanoid-urchin-desc
+  icon: { sprite: _Mono/Objects/Misc/module.rsi, state: cpu_rogue }
+  productEntity: PlayerBorgMechhiveGhostRolePlaytime
+  cost:
+    Doubloon: 10
+  categories:
+  - UplinkPirateEquipment
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkLpcOcelot
+  name: uplink-lpc-hivefleet-ocelot-name
+  description: uplink-lpc-hivefleet-ocelot-desc
+  icon: { sprite: _Mono/Objects/Misc/lpc.rsi, state: htech }
+  productEntity: ShipVoucherOcelot
+  cost:
+    Doubloon: 10
+  categories:
+  - UplinkPirateEquipment
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkLpcHoplite
+  name: uplink-lpc-hivefleet-hoplite-name
+  description: uplink-lpc-hivefleet-hoplite-desc
+  icon: { sprite: _Mono/Objects/Misc/lpc.rsi, state: htech }
+  productEntity: ShipVoucherHoplite
+  cost:
+    Doubloon: 10
+  categories:
+  - UplinkPirateEquipment
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkLpcDagger
+  name: uplink-lpc-hivefleet-dagger-name
+  description: uplink-lpc-hivefleet-dagger-desc
+  icon: { sprite: _Mono/Objects/Misc/lpc.rsi, state: htech }
+  productEntity: ShipVoucherDagger
+  cost:
+    Doubloon: 20
+  categories:
+  - UplinkPirateEquipment
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkLpcFracture
+  name: uplink-lpc-hivefleet-fracture-name
+  description: uplink-lpc-hivefleet-fracture-desc
+  icon: { sprite: _Mono/Objects/Misc/lpc.rsi, state: htech }
+  productEntity: ShipVoucherFracture
+  cost:
+    Doubloon: 20
+  categories:
+  - UplinkPirateEquipment
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink

@@ -30,8 +30,8 @@
 # Rogue version
 - type: entity
   id: ContrabandPalletPirate
-  name: data exchange platform
-  description: Uploads stolen assets and contraband for data chits.
+  name: D.S.S.P Pallet
+  description: Dynamic Survey Subspace Pulser. Transfers an item to subspace for processing in exchange for data chits.
   parent: ContrabandPallet
   components:
   - type: Sprite

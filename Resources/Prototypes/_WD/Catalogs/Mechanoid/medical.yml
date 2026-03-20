@@ -1,0 +1,93 @@
+﻿#MARK: Medical
+- type: listing
+  id: UplinkPirateInterdyneDefibrillator
+  name: uplink-pirate-interdyne-defibrillator-name
+  description: uplink-pirate-interdyne-defibrillator-desc
+  productEntity: DefibrillatorCompact
+  cost:
+    Doubloon: 2
+  categories:
+  - UplinkPirateMedical
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateChemicalSynthesisKit
+  name: uplink-pirate-chemical-synthesis-kit-name
+  description: uplink-pirate-chemical-synthesis-kit-desc
+  icon: { sprite: /Textures/Objects/Storage/boxicons.rsi, state: vials }
+  productEntity: ChemicalSynthesisKit
+  cost:
+    Doubloon: 3
+  categories:
+  - UplinkPirateMedical
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateCombatMedkit
+  name: uplink-pirate-combat-medkit-name
+  description: uplink-pirate-combat-medkit-desc
+  productEntity: MedkitCombatFilled
+  icon: { sprite: Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+  cost:
+    Doubloon: 5
+  categories:
+  - UplinkPirateMedical
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateSyringeCaseFilled
+  name: uplink-pirate-syringe-case-name
+  description: uplink-pirate-syringe-case-desc
+  productEntity: SyringeCaseAltFilled
+  cost:
+    Doubloon: 5
+  categories:
+  - UplinkPirateMedical
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateMedicalAssembler
+  name:  uplink-pirate-medical-assembler-name
+  description: uplink-pirate-medical-assembler-desc
+  productEntity: MedicalAssemblerFlatpack
+  cost:
+    Doubloon: 2
+  categories:
+  - UplinkPirateMedical
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateSurgery
+  name: uplink-pirate-surgery-name
+  description: uplink-pirate-surgery-desc
+  productEntity: ClothingBackpackDuffelSyndicateFilledMedical
+  icon: { sprite: Objects/Specific/Medical/Surgery/saw.rsi, state: advanced }
+  cost:
+    Doubloon: 5
+  categories:
+  - UplinkPirateMedical
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink

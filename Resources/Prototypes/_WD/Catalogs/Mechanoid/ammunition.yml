@@ -1,0 +1,226 @@
+﻿#MARK: Ammunition
+- type: listing
+  id: UplinkPirateShotgunDrum
+  name: uplink-pirate-box-bulldog-ammo-name
+  description: uplink-pirate-box-bulldog-ammo-desc
+  productEntity: BoxMagazine12_gauge
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateShotgunDrumSlug
+  name: uplink-pirate-box-bulldog-slug-ammo-name
+  description: uplink-pirate-box-bulldog-slug-ammo-desc
+  productEntity: BoxMagazine12_gaugeSlug
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateSMGMag
+  name: uplink-pirate-box-smg-magazine-name
+  description: uplink-pirate-box-smg-magazine-desc
+  productEntity: BoxMagazine9x19mmSubMachineGunFMJ
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateShellBoxLethal
+  name: uplink-pirate-shell-box-lethal-name
+  description: uplink-pirate-shell-box-lethal-desc
+  productEntity: AmmoBox12_gaugeBuckshot
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/12_gauge.rsi, state: lethal }
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirate762x39mmAmmoBoxBig
+  name: uplink-pirate-light-rifle-magazine-box-big-name
+  description: uplink-pirate-light-rifle-magazine-box-big-desc
+  productEntity: AmmoBox762x39mmBigFMJ
+  cost:
+    Doubloon: 5
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateAmmoBox45_magnum
+  name: uplink-pirate-magazine-box-45_magnum-name
+  description: uplink-pirate-magazine-box-45_magnum-desc
+  productEntity: BoxMagazine45_magnumFMJ
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateBoxMagazine762x39mmFMJ
+  name: uplink-pirate-box-magazine-light-rifle-name
+  description: uplink-pirate-box-magazine-light-rifle-desc
+  productEntity: BoxMagazine762x39mmFMJ
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateMagazineSubsonic
+  name: uplink-subsonic-mag-name
+  description: uplink-subsonic-mag-desc
+  productEntity: Magazine762x39mmSubsonic
+  cost:
+    Doubloon: 4
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateBoxSubsonic
+  name: uplink-subsonic-box-name
+  description: uplink-subsonic-box-desc
+  productEntity: AmmoBox762x39mmSubsonic
+  cost:
+    Doubloon: 7
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateBoxMagazine9x19mmFMJ
+  name: uplink-pirate-box-magazine-pistol-name
+  description: uplink-pirate-box-magazine-pistol-desc
+  productEntity: BoxMagazine9x19mmFMJ
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateBurnerBox
+  name: uplink-pirate-box-highcal-name
+  description: uplink-pirate-box-highcal-desc
+  productEntity: AmmoBox127x99mm
+  cost:
+    Doubloon: 10
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateBurnerBoxHE
+  name: uplink-pirate-box-highcal-he-name
+  description: uplink-pirate-box-highcal-he-desc
+  productEntity: AmmoBox127x99mmExplosive
+  cost:
+    Doubloon: 5
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateSniperAmmo
+  name: uplink-pirate-sniper-ammo-name
+  description: uplink-pirate-sniper-ammo-desc
+  productEntity: AmmoBox145x114mm
+  cost:
+    Doubloon: 5 # Mono
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateFragGrenade
+  name: uplink-pirate-frag-grenade-name
+  description: uplink-pirate-frag-grenade-desc
+  productEntity: 40mmGrenadeFragmentation
+  cost:
+    Doubloon: 5
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateBlastGrenade
+  name: uplink-pirate-blast-grenade-name
+  description: uplink-pirate-blast-grenade-desc
+  productEntity: 40mmGrenadeThermobaric
+  cost:
+    Doubloon: 5
+  categories:
+  - UplinkPirateAmmo
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
