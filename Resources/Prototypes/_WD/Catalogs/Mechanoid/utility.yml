@@ -1,0 +1,63 @@
+﻿#MARK: Utility
+- type: listing
+  id: UplinkPirateEnergyShield
+  name: uplink-pirate-energy-shield-name
+  description: uplink-pirate-energy-shield-desc
+  icon: { sprite: /Textures/Objects/Weapons/Melee/e_shield.rsi, state: eshield-on }
+  productEntity: EnergyShield
+  cost:
+    Doubloon: 40
+  categories:
+  - UplinkPirateUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateThrusterKit
+  name: uplink-pirate-thruster-kit-name
+  description: uplink-pirate-thruster-kit-desc
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box}
+  productEntity: BoxT3SuperCapacitor
+  cost:
+    Doubloon: 15
+  categories:
+  - UplinkPirateUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateRadioJammer
+  name: uplink-pirate-radio-jammer-name
+  description: uplink-pirate-radio-jammer-desc
+  productEntity: RadioJammer
+  cost:
+    Doubloon: 10
+  categories:
+  - UplinkPirateUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateHypopen
+  name: uplink-pirate-hypopen-name
+  description: uplink-pirate-hypopen-desc
+  productEntity: HypopenBox
+  icon: { sprite: Objects/Misc/pens.rsi, state: pen }
+  cost:
+    Doubloon: 20
+  categories:
+  - UplinkPirateUtility
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink

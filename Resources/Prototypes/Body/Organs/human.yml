@@ -95,6 +95,13 @@
   - type: Item
     size: Small
     heldPrefix: brain
+# WICCE START
+  - type: Contraband
+    severity: FactionGear3
+    allowedDepartments: [ Civilian ]
+    turnInValues:
+      Doubloon: 10
+# WICCE END
 
 - type: entity
   id: OrganHumanEyes

@@ -1,0 +1,127 @@
+﻿#MARK: Explosives
+
+- type: listing
+  id: UplinkPirateFlashbangGrenadeBox
+  name:  uplink-pirate-flashbanggrenade-box-name
+  description: uplink-pirate-flashbanggrenade-box-desc
+  productEntity: BoxFlashBangGrenades
+  icon: { sprite: Objects/Weapons/Grenades/flashbang.rsi, state: icon}
+  cost:
+    Doubloon: 2
+  categories:
+  - UplinkPirateExplosives
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateSmokeGrenadeBox
+  name:  uplink-pirate-smokegrenade-box-name
+  description: uplink-pirate-smokegrenade-box-desc
+  productEntity: BoxSmokeGrenades
+  icon: { sprite: Objects/Weapons/Grenades/smoke.rsi, state: icon}
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateExplosives # Moved to Explosives - Mono
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateC4
+  name: uplink-pirate-c4-name
+  description: uplink-pirate-c4-desc
+  productEntity: C4
+  cost:
+    Doubloon: 5
+  categories:
+  - UplinkPirateExplosives
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateC4Bundle
+  name: uplink-pirate-c4-bundle-name
+  description: uplink-pirate-c4-bundle-desc
+  productEntity: ClothingBackpackDuffelSyndicateC4tBundle
+  cost:
+    Doubloon: 15
+  categories:
+  - UplinkPirateExplosives
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateEmpGrenadeBox
+  name: uplink-pirate-empgrenade-box-name
+  description: uplink-pirate-empgrenade-box-desc
+  productEntity: BoxEMPGrenadesNfsd
+  icon: { sprite: Objects/Weapons/Grenades/empgrenade.rsi, state: icon}
+  cost:
+    Doubloon: 1
+  categories:
+  - UplinkPirateExplosives
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateIncendiaryGrenadeBox
+  name: uplink-pirate-incendiarygrenade-box-name
+  description: uplink-pirate-incendiarygrenade-box-desc
+  productEntity: BoxIncendiaryGrenadesNfsd
+  icon: { sprite: Objects/Weapons/Grenades/pyrogrenade.rsi, state: icon}
+  cost:
+    Doubloon: 2
+  categories:
+  - UplinkPirateExplosives
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateShrapnelGrenadeBox
+  name: uplink-pirate-shrapnelgrenade-box-name
+  description: uplink-pirate-shrapnelgrenade-box-desc
+  productEntity: BoxShrapnelGrenadesNfsd
+  icon: { sprite: Objects/Weapons/Grenades/shrapnelgrenade.rsi, state: icon}
+  cost:
+    Doubloon: 2
+  categories:
+  - UplinkPirateExplosives
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
+
+- type: listing
+  id: UplinkPirateExplosiveGrenadeBox
+  name:  uplink-pirate-explosivegrenade-box-name
+  description: uplink-pirate-explosivegrenade-box-desc
+  productEntity: BoxExplosiveGrenadesNfsd
+  icon: { sprite: Objects/Weapons/Grenades/grenade.rsi, state: icon}
+  cost:
+    Doubloon: 8
+  categories:
+  - UplinkPirateExplosives
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - PirateUplink
