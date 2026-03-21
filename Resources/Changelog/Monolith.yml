@@ -18524,3 +18524,12 @@ Entries:
   id: 2043
   time: '2026-03-21T18:34:40.0000000+00:00'
   url: https://github.com/Monolith-Station/Monolith/pull/3506
+- author: EldritchPineapple
+  changes:
+    - type: Add
+      message: Added Tsf Altair, the new frigate!
+    - type: Remove
+      message: Removed Polaris, rest easy
+  id: 2044
+  time: '2026-03-21T19:52:52.0000000+00:00'
+  url: https://github.com/Monolith-Station/Monolith/pull/3241
