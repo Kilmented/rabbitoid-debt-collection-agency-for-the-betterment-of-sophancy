@@ -553,7 +553,7 @@
     runningState: icon
     staticPacks:
     - StaticAmmoRecipePack
-    # - RoundstartShipgunAmmo # Mono
+    - RoundstartShipgunAmmo # Mono
     dynamicPacks:
     - DynamicAmmoRecipePack
     # Mono start
