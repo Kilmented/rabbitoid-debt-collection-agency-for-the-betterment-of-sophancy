@@ -12,11 +12,11 @@
     - NFAdventure
     - BasicStationEventScheduler
     - BluespaceEventScheduler
-    - BluespaceDungeonEventScheduler
+#    - BluespaceDungeonEventScheduler
     - BluespaceSalvageEventScheduler
     - SmugglingEventScheduler
     - FrontierRoundstartVariation
-    - MonoMonolithicEventsScheduler
+#    - MonoMonolithicEventsScheduler
 
 - type: gamePreset
   id: MonoRogueTSF
@@ -27,11 +27,11 @@
   - NFAdventure
   - BasicStationEventScheduler
   - BluespaceEventScheduler
-  - BluespaceDungeonEventScheduler
+#  - BluespaceDungeonEventScheduler
   - BluespaceSalvageEventScheduler
   - SmugglingEventScheduler
   - FrontierRoundstartVariation
-  - MonoMonolithicEventsScheduler
+#  - MonoMonolithicEventsScheduler
 
 - type: gamePreset
   id: MonoRogueUSSP
@@ -42,11 +42,11 @@
   - NFAdventure
   - BasicStationEventScheduler
   - BluespaceEventScheduler
-  - BluespaceDungeonEventScheduler
+#  - BluespaceDungeonEventScheduler
   - BluespaceSalvageEventScheduler
   - SmugglingEventScheduler
   - FrontierRoundstartVariation
-  - MonoMonolithicEventsScheduler
+#  - MonoMonolithicEventsScheduler
 
 - type: gamePreset
   id: MonoTSFUSSP
@@ -57,11 +57,11 @@
   - NFAdventure
   - BasicStationEventScheduler
   - BluespaceEventScheduler
-  - BluespaceDungeonEventScheduler
+#  - BluespaceDungeonEventScheduler
   - BluespaceSalvageEventScheduler
   - SmugglingEventScheduler
   - FrontierRoundstartVariation
-  - MonoMonolithicEventsScheduler
+#  - MonoMonolithicEventsScheduler
 
 - type: gamePreset
   id: MonoADS
@@ -79,7 +79,7 @@
 #  - MonoAISTCShuttleSpawnerScheduler
 #  - MonoAISTCShuttleSpawnerSchedulerTier2
 #  - MonoAsakimSTCShuttleSpawnerScheduler # Wicce: Named alien races are no bueno. Pending generification rework.
-  - MonoMonolithicEventsScheduler
+#  - MonoMonolithicEventsScheduler
 
 - type: gamePreset
   id: MonoChimera
@@ -90,12 +90,12 @@
   - NFAdventure
   - BasicStationEventScheduler
   - BluespaceEventScheduler
-  - BluespaceDungeonEventScheduler
+#  - BluespaceDungeonEventScheduler
   - BluespaceSalvageEventScheduler
   - SmugglingEventScheduler
   - FrontierRoundstartVariation
-  - MonoChimeraSTCShuttleSpawnerScheduler
-  - MonoMonolithicEventsScheduler
+#  - MonoChimeraSTCShuttleSpawnerScheduler
+#  - MonoMonolithicEventsScheduler
 
 - type: gamePreset
   id: MonoMixed
@@ -106,15 +106,15 @@
   - NFAdventure
   - BasicStationEventScheduler
   - BluespaceEventScheduler
-  - BluespaceDungeonEventScheduler
+#  - BluespaceDungeonEventScheduler
   - BluespaceSalvageEventScheduler
   - SmugglingEventScheduler
   - FrontierRoundstartVariation
-  - MonoChimeraSTCShuttleSpawnerSchedulerSlow
-  - MonoAISTCShuttleSpawnerSchedulerSlow
-  - MonoAISTCShuttleSpawnerSchedulerTier2Slow
-  - MonoAsakimSTCShuttleSpawnerSchedulerSlow
-  - MonoMonolithicEventsScheduler
+#  - MonoChimeraSTCShuttleSpawnerSchedulerSlow
+#  - MonoAISTCShuttleSpawnerSchedulerSlow
+#  - MonoAISTCShuttleSpawnerSchedulerTier2Slow
+#  - MonoAsakimSTCShuttleSpawnerSchedulerSlow
+#  - MonoMonolithicEventsScheduler
 
 - type: gamePreset
   id: MonoAllAtOnce
@@ -125,11 +125,11 @@
   - NFAdventure
   - BasicStationEventScheduler
   - BluespaceEventScheduler
-  - BluespaceDungeonEventScheduler
+#  - BluespaceDungeonEventScheduler
   - BluespaceSalvageEventScheduler
   - SmugglingEventScheduler
   - FrontierRoundstartVariation
-  - MonoChimeraSTCShuttleSpawnerSchedulerApocalypse
-  - MonoAISTCShuttleSpawnerSchedulerApocalypse
-  - MonoAsakimSTCShuttleSpawnerSchedulerApocalypse
-  - MonoMonolithicEventsScheduler
+#  - MonoChimeraSTCShuttleSpawnerSchedulerApocalypse
+#  - MonoAISTCShuttleSpawnerSchedulerApocalypse
+#  - MonoAsakimSTCShuttleSpawnerSchedulerApocalypse
+#  - MonoMonolithicEventsScheduler
