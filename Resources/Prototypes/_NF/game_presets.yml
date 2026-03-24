@@ -8,14 +8,14 @@
   showInVote: false # Mono
   rules:
     - NFAdventure
-    - BasicStationEventScheduler
-    - BluespaceEventScheduler
-    - BluespaceDungeonEventScheduler
+  #  - BasicStationEventScheduler
+  #  - BluespaceEventScheduler
+  #  - BluespaceDungeonEventScheduler
     - BluespaceSalvageEventScheduler
-    - SmugglingEventScheduler
+#    - SmugglingEventScheduler
     - FrontierRoundstartVariation
-    - MonoAISTCShuttleSpawnerScheduler # Mono
-    - MonoAsakimSTCShuttleSpawnerScheduler # Mono
+  #  - MonoAISTCShuttleSpawnerScheduler # Mono
+  #  - MonoAsakimSTCShuttleSpawnerScheduler # Mono
 
 - type: gamePreset
   id: NFPirate
@@ -29,9 +29,9 @@
     - NFAdventure
     - BasicStationEventScheduler
     - BluespaceEventScheduler
-    - BluespaceDungeonEventScheduler
+#    - BluespaceDungeonEventScheduler
     - BluespaceSalvageEventScheduler
-    - SmugglingEventScheduler
+#    - SmugglingEventScheduler
     - FrontierRoundstartVariation
-    - MonoAISTCShuttleSpawnerScheduler # Mono
-    - MonoAsakimSTCShuttleSpawnerScheduler # Mono
+#    - MonoAISTCShuttleSpawnerScheduler # Mono
+#    - MonoAsakimSTCShuttleSpawnerScheduler # Mono
