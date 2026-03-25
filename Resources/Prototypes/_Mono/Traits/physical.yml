@@ -348,60 +348,60 @@
   - type: AlcoholTolerance
     visualScaleMultiplier: 0.35
 
-- type: trait
-  id: PlateletFactories
-  name: trait-platelet-factories-name
-  description: trait-platelet-factories-desc
-  category: Physical
-  cost: 6
-  mutuallyExclusiveTraits:
-  - Hemophilia
-  speciesBlacklist:
-  - IPC
-  blacklist:
-    components:
-    - BorgChassis
-  components:
-  - type: PlateletFactories
-    intervalSeconds: 1
-    damagePerInterval:
-      groups:
-        Brute: -1.5
-        Burn: -2
-    critMultiplier: .25
-
-- type: trait
-  id: NaniteRepairDrones
-  name: trait-nanite-repair-drones-name
-  description: trait-nanite-repair-drones-desc
-  category: Physical
-  cost: 8
-  speciesBlacklist:
-  - Human
-  - Chitinid
-  - Oni
-  - Vulpkanin
-  - Vox
-  - Diona
-  - Moth
-  - Goblin
-  - Arachnid
-  - Resomi
-  - Harpy
-  - Reptilian
-  - Hydrakin
-  - Rodentia
-  - Dwarf
-  - SlimePerson
-  - Felinid
-  - Tajaran
-  blacklist:
-    components:
-    - BorgChassis
-  components:
-  - type: PlateletFactories
-    intervalSeconds: 1
-    damagePerInterval:
-      groups:
-        Brute: -1.5
-        Burn: -2
+#- type: trait
+#  id: PlateletFactories
+#  name: trait-platelet-factories-name
+#  description: trait-platelet-factories-desc
+#  category: Physical
+#  cost: 6
+#  mutuallyExclusiveTraits:
+#  - Hemophilia
+#  speciesBlacklist:
+#  - IPC
+#  blacklist:
+#    components:
+#    - BorgChassis
+#  components:
+#  - type: PlateletFactories
+#    intervalSeconds: 1
+#    damagePerInterval:
+#      groups:
+#        Brute: -1.5
+#        Burn: -2
+#    critMultiplier: .25
+#
+#- type: trait
+#  id: NaniteRepairDrones
+#  name: trait-nanite-repair-drones-name
+#  description: trait-nanite-repair-drones-desc
+#  category: Physical
+#  cost: 8
+#  speciesBlacklist:
+#  - Human
+#  - Chitinid
+#  - Oni
+#  - Vulpkanin
+#  - Vox
+#  - Diona
+#  - Moth
+#  - Goblin
+#  - Arachnid
+#  - Resomi
+#  - Harpy
+#  - Reptilian
+#  - Hydrakin
+#  - Rodentia
+#  - Dwarf
+#  - SlimePerson
+#  - Felinid
+#  - Tajaran
+#  blacklist:
+#    components:
+#    - BorgChassis
+#  components:
+#  - type: PlateletFactories
+#    intervalSeconds: 1
+#    damagePerInterval:
+#      groups:
+#        Brute: -1.5
+#        Burn: -2
