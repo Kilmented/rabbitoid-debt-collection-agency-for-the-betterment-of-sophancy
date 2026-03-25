@@ -1,0 +1,36 @@
+## Static
+- type: latheRecipePack
+  id: NuclearStatic
+  recipes:
+  - CerenkiteReactorFuelRod
+  - CerenkiteReactorFuelRod
+  - UraniumReactorFuelRod
+  - PlutoniumReactorFuelRod
+  - BananiumReactorFuelRod
+  - PlasmaReactorFuelRod
+  - UraniumGlassReactorFuelRod
+  - BohrumReactorControlRod
+  - SteelReactorControlRod
+  - GoldReactorControlRod
+  - SilverReactorControlRod
+  - BrassReactorControlRod
+  - PlasteelReactorControlRod
+  - GlassReactorControlRod
+  - PlasmaGlassReactorControlRod
+  - DiamondReactorControlRod
+  - SteelReactorGasChannel
+  - GoldReactorGasChannel
+  - SilverReactorGasChannel
+  - BrassReactorGasChannel
+  - PlasteelReactorGasChannel
+  - GlassReactorGasChannel
+  - PlasmaGlassReactorGasChannel
+  - DiamondReactorGasChannel
+  - SteelReactorHeatExchanger
+  - GoldReactorHeatExchanger
+  - SilverReactorHeatExchanger
+  - BrassReactorHeatExchanger
+  - PlasteelReactorHeatExchanger
+  - GlassReactorHeatExchanger
+  - PlasmaGlassReactorHeatExchanger
+  - DiamondReactorHeatExchanger
