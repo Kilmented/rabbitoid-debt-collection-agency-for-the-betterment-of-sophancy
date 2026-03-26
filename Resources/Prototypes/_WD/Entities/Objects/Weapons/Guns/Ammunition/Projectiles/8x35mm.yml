@@ -1,0 +1,11 @@
+- type: entity
+  id: Bullet8x35mmCFMJ
+  name: bullet (8x35mmC FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shoch: 20
+        Piercing: 90

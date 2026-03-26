@@ -1,0 +1,35 @@
+- type: entity
+  id: Cartridge68x51mmFMJ
+  name: cartridge (6.8x51mm FMJ)
+  parent: BaseCartridge
+  description: An ancient pattern of centerfire, rimless, bottlenecked rifle cartridge.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge68x51mm
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: CartridgeAmmo
+    proto: Bullet68x51mmFMJ
+
+# WICCE: Just for example purposes.
+#- type: entity
+#  id: WDCartridge68x51mmPractice
+#  name: cartridge (6.8x51mm Practice)
+#  parent: WDBaseCartridge68x51mm
+#  components:
+#  - type: CartridgeAmmo
+#    proto: WDBullet68x51mmPractice
+#  - type: Sprite
+#    layers:
+#      - state: base
+#        map: [ "enum.AmmoVisualLayers.Base" ]
+#      - state: tip
+#        map: [ "enum.AmmoVisualLayers.Tip" ]
+#        color: "#dbdbdb"

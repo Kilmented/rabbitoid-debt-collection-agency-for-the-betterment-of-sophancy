@@ -1,0 +1,29 @@
+﻿- type: entity
+  id: Shell7x30mmC
+  name: shotgun shell (10ga)
+  parent: BaseCartridge
+  description: Shotgun round. Kicks hard, and will tear a chunk out of anything that doesnt have the armor to protect it.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - ShellShotgun7x30mmC
+  - type: CartridgeAmmo
+    soundEject:
+      collection: ShellEject
+      params:
+        variation: 0.06
+    proto: Pellet7x30mmCBuckshotSpread
+  - type: EmitSoundOnLand
+    sound:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/4_gauge_shell.rsi
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    scale: 0.65, 0.65
+  - type: Appearance
+  - type: SpentAmmoVisuals

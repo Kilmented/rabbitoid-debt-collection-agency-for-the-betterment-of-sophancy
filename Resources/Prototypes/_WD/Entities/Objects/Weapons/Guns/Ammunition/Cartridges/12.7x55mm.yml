@@ -1,0 +1,19 @@
+- type: entity
+  id: Cartridge127x55mmFMJ
+  name: cartridge (12.7x55mm FMJ)
+  parent: BaseCartridge
+  description: Full power, rifle sized round bringing destruction to anything on the business end.
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge127x55mm
+  - type: CartridgeAmmo
+    proto: Bullet127x55mmFMJ
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals

@@ -1,0 +1,11 @@
+- type: entity
+  id: Bullet6x18mmCFMJ
+  name: bullet (6x18mmC FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 5
+        Piercing: 15

@@ -1,0 +1,19 @@
+- type: entity
+  id: Cartridge6x18mmCFMJ
+  name: cartridge (6x18mmC FMJ)
+  parent: BaseCartridge
+  description: Generic pistol and submachine cartridge.
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - Cartridge6x18mmC
+  - type: CartridgeAmmo
+    proto: Bullet6x18mmCFMJ
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals

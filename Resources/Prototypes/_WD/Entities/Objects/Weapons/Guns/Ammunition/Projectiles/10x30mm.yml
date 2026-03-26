@@ -1,0 +1,11 @@
+- type: entity
+  id: Bullet10x30mmFMJ
+  name: bullet (10x30mm FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 5
+        Piercing: 20

@@ -1,0 +1,19 @@
+- type: entity
+  id: Cartridge86x70mmFMJ
+  name: cartridge (8.6x70mm FMJ)
+  parent: BaseCartridge
+  description: An ancient pattern of centerfire, rimless, bottlenecked rifle cartridge.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge86x70mm
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: CartridgeAmmo
+    proto: Bullet86x70mmFMJ

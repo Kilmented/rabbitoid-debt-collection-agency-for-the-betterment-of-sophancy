@@ -1,0 +1,19 @@
+- type: entity
+  id: Cartridge8x35mmCFMJ
+  name: cartridge (8x35mmC FMJ)
+  parent: BaseCartridge
+  description: A small brick of crumbling, chalky grey stuff capped by a metallic hexagon soft at the edges.
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge8x35mmC
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: CartridgeAmmo
+    proto: Bullet8x35mmCFMJ

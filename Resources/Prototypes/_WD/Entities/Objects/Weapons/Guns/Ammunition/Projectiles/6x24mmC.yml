@@ -1,0 +1,11 @@
+- type: entity
+  id: Bullet6x24mmCFMJ
+  name: charged shot (6x24mmC FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 10
+        Piercing: 25

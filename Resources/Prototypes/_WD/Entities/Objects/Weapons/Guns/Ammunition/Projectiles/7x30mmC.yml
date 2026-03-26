@@ -1,0 +1,24 @@
+﻿- type: entity
+  id: Pellet7x30mmCBuckshot
+  name: charged pellet (7x30mm)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+        Shock: 8
+
+- type: entity
+  id: Pellet7x30mmCBuckshotSpread
+  categories: [ HideSpawnMenu ]
+  parent: Pellet7x30mmCBuckshot
+  components:
+  - type: ProjectileSpread
+    proto: Pellet20mmBuckshot
+    count: 4
+    spread: 10

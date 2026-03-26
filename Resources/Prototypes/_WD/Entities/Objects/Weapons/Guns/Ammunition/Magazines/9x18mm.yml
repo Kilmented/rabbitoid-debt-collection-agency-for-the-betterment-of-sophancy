@@ -1,0 +1,112 @@
+- type: entity
+  id: Magazine9x18mmPistol
+  name: pistol magazine (9x18mm)
+  suffix: FMJ
+  parent: [ BaseItem, RecyclableItemSteelTiny ]
+  components:
+  - type: Tag
+    tags:
+      - Magazine9x18mmPistolFMJ
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge9x18mm
+    proto: Cartridge9x18mmFMJ
+    capacity: 15
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_pistol_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+#Start Pistol mags
+- type: entity
+  id: Magazine9x18mmPistolEmpty
+  name: pistol magazine (9x18mm)
+  suffix: empty
+  parent: Magazine9x18mmPistol
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+# Wicce: For example purposes only.
+##Start SubMachineGun mags
+#- type: entity
+#  id: BaseMagazine9x19mmSubMachineGunFMJ
+#  name: SMG magazine (9x19mm FMJ)
+#  parent: [BaseItem, RecyclableItemSteelTiny]
+#  abstract: true
+#  components:
+#  - type: Tag
+#    tags:
+#      - Magazine9x19mmSubMachineGunFMJ
+#  - type: BallisticAmmoProvider
+#    mayTransfer: true
+#    whitelist:
+#      tags:
+#        - Cartridge9x19mmFMJ
+#    capacity: 35
+#  - type: Item
+#    size: Small
+#  - type: ContainerContainer
+#    containers:
+#      ballistic-ammo: !type:Container
+#  - type: Sprite
+#    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/9x19mm/9x19mm_smg_mag.rsi
+#    layers:
+#    - state: base
+#      map: ["enum.GunVisualLayers.Base"]
+#    - state: mag-1
+#      map: ["enum.GunVisualLayers.Mag"]
+#  - type: MagazineVisuals
+#    magState: mag
+#    steps: 6
+#    zeroVisible: false
+#  - type: Appearance
+#
+#- type: entity
+#  id: Magazine9x19mmSubMachineGunFMJ
+#  name: SMG magazine (9x19mm FMJ)
+#  parent: BaseMagazine9x19mmSubMachineGunFMJ
+#  components:
+#  - type: BallisticAmmoProvider
+#    proto: Cartridge9x19mmFMJ
+#    whitelist:
+#      tags:
+#        - Cartridge9x19mmFMJ
+#    soundInsert:
+#      path: /Audio/Weapons/Guns/MagIn/bullet_insert.ogg
+#  - type: Sprite
+#    layers:
+#    - state: base
+#      map: ["enum.GunVisualLayers.Base"]
+#    - state: mag-1
+#      map: ["enum.GunVisualLayers.Mag"]
+#
+#- type: entity
+#  id: Magazine9x19mmSubMachineGunEmpty
+#  name: SMG magazine (9x19mm any)
+#  suffix: empty
+#  parent: BaseMagazine9x19mmSubMachineGunFMJ
+#  components:
+#  - type: BallisticAmmoProvider
+#    proto: null
+#  - type: Sprite
+#    layers:
+#    - state: base
+#      map: ["enum.GunVisualLayers.Base"]
+#    - state: mag-1
+#      map: ["enum.GunVisualLayers.Mag"]

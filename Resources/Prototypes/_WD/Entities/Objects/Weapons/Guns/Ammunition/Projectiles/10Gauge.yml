@@ -1,0 +1,25 @@
+﻿- type: entity
+  id: Pellet10GaugeBuckshot
+  name: pellet (10ga)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Blunt: 15
+#    armorPenetration: -0.5
+
+- type: entity
+  id: Pellet10GaugeBuckshotSpread
+  categories: [ HideSpawnMenu ]
+  parent: Pellet10GaugeBuckshot
+  components:
+  - type: ProjectileSpread
+    proto: Pellet20mmBuckshot
+    count: 4
+    spread: 5

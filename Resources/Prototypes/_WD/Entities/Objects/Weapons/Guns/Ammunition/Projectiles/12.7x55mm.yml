@@ -1,0 +1,11 @@
+- type: entity
+  id: Bullet127x55mmFMJ
+  name: bullet (12.7x55mm FMJ)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 25
+        Piercing: 75
