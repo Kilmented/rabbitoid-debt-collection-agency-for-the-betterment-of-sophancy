@@ -1,0 +1,60 @@
+﻿# WEAPON REPORT:
+# Name: Schmeisser
+# Tier: 2
+# DPS: 105 (Auto)
+# Desc: T1 SMG, first from research. Is relatively compact,
+
+- type: entity
+  name: Schmeisser
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSMGSchmeisser
+  description: An already venerable design rolled out of death by a lucky researcher who happened to find it, almost pristine, on an ancient hard drive.
+  components:
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/SMGs/Schmeisser.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _WD/Objects/Weapons/Guns/SMGs/Schmeisser.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Gun
+    fireRate: 4.9
+    soundGunshot:
+      path: /Audio/_DV/Weapons/Guns/Gunshots/universal.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine9x18mmSMG
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine9x18mmSMG
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge9x18mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge9x18mm
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -16
+  - type: StaticPrice # Mono
+    price: 0
+  - type: Contraband
+    severity: FactionGear3
+    allowedDepartments: [ Civilian ]
+    turnInValues:
+      Doubloon: 1 # Worth just enough to warrant taking if you have nothing else.
