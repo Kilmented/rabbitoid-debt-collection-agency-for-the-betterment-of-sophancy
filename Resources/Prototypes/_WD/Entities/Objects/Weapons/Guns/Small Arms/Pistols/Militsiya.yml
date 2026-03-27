@@ -1,0 +1,51 @@
+﻿# WEAPON REPORT:
+# Name: Militsiya
+# Tier: 1
+# DPS: 98 (Semi-Auto)
+# Desc: T1 pistol, first thing you unlock from research. Cheap, easy, and functional step up from the starting revolver.
+
+- type: entity
+  name: Militsiya
+  parent: BaseWeaponPistol
+  id: WeaponPistolMilitsiya
+  description: A popular modification of a venerable design that increases the size to allow for double stacked magazines. On the side is a serial number and '9x18mm'.
+  components:
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/Pistols/Militsiya.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 4.9
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_DV/Weapons/Guns/Gunshots/universal.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine9x18mmPistol
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine9x18mmPistol
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge9x18mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge9x18mm
+  - type: StaticPrice # Mono
+    price: 0
+  - type: Contraband
+    severity: FactionGear3
+    allowedDepartments: [ Civilian ]
+    turnInValues:
+      Doubloon: 1 # Worth just enough to warrant taking if you have nothing else.

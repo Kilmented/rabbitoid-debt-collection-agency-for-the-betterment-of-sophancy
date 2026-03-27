@@ -6,7 +6,7 @@
   components:
   - type: Tag
     tags:
-      - Magazine9x18mmPistolFMJ
+      - Magazine9x18mmPistol
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:

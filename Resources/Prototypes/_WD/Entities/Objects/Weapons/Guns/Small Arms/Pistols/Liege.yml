@@ -1,0 +1,27 @@
+﻿# WEAPON REPORT:
+# Name: Liege
+# Tier: 0
+# DPS: 200 (Semi-Auto)
+# Desc: Knight exclusive; no more than five may be mapped in. Cumbersome, but has lots of aura.
+
+- type: entity
+  name: Liege
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverLiege
+  description: A mass produced copy of an ancient pattern gas operated revolver. Has a loading gate and cannot be fanned to increase its meager firerate. However, it's still a gun.
+  components:
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/Pistols/Liege.rsi
+  - type: Gun
+    fireRate: 2
+    resetOnHandSelected: false
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge9x18mm
+    capacity: 6
+    proto: Cartridge9x18mmFMJ
+    chambers: [ True, True, True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null, null, null ]
+  - type: StaticPrice
+    price: 0

@@ -21,7 +21,7 @@
     slots:
     - suitStorage
     - Belt
-  - type: AmmoCounter
+#  - type: AmmoCounter # Wicce: Are you a psychic or some shit?
   - type: Gun
     selectedMode: SemiAuto
     fireRate: 1.5

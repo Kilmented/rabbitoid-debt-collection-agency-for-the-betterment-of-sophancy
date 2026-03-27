@@ -1,0 +1,43 @@
+﻿# WEAPON REPORT:
+# Name: Requiem
+# Tier: 3
+# DPS: 200 (Semi-Auto), 400 (Burst)
+# Desc: Knight exclusive; no more than five may be mapped in. Cumbersome, but has lots of aura.
+
+- type: entity
+  name: Requiem
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverRequiem
+  description: A knight's sword. Lethal, yet cumbersome high caliber revolver for intimidation and maximal stopping power. Uses proprietary 12.7x55mm ammo.
+  components:
+  - type: Sprite
+    scale: 1.05 , 1.05
+    sprite: _WD/Objects/Weapons/Guns/Pistols/Requiem.rsi
+  - type: Gun
+    fireRate: 1.5
+    resetOnHandSelected: false
+    burstFireRate: 2
+    shotsPerBurst: 1
+    burstCooldown: 0.1
+    selectedMode: SemiAuto
+    availableModes:
+      - Burst
+      - SemiAuto
+    minAngle: 0
+    angleIncrease: 8
+    maxAngle: 40
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge127x55mm
+    capacity: 6
+    proto: Cartridge127x55mmFMJ
+    chambers: [ True, True, True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null, null, null ]
+  - type: StaticPrice
+    price: 0
+  - type: Contraband
+    severity: FactionGear3
+    allowedDepartments: [ Civilian ]
+    turnInValues:
+      Doubloon: 10
