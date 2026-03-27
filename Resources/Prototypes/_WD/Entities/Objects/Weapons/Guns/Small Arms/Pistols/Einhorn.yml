@@ -1,0 +1,45 @@
+﻿# WEAPON REPORT:
+# Name: Einhorn
+# Tier: 1
+# DPS: 93.75 (Semi-Auto) 106.25 (Burst)
+# Desc: Sexy silly hypercompact revolver. For the lulz, but actually pulls ahead of the pack in multiple regards.
+
+- type: entity
+  name: Einhorn
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverEinhorn
+  description: Recovered by VI:ROA from local fragmented designs; a high-speed low-drag no-nonsense compact revolver.
+  components:
+  - type: Sprite
+    scale: 0.95 , 0.95
+    sprite: _WD/Objects/Weapons/Guns/Pistols/Einhorn.rsi
+  - type: Gun
+    fireRate: 3.75
+    burstFireRate: 4.25
+    shotsPerBurst: 1
+    burstCooldown: 0
+    selectedMode: SemiAuto
+    availableModes:
+    - Burst
+    - SemiAuto
+    resetOnHandSelected: false
+    angleIncrease: 2 # For fanning.
+  - type: Item
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge10x30mm
+    capacity: 6
+    proto: Cartridge10x30mmFMJ
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+  - type: StaticPrice
+    price: 0
+  - type: Contraband
+    severity: FactionGear3
+    allowedDepartments: [ Civilian ]
+    turnInValues:
+      Doubloon: 1 # Worth just enough to warrant taking if you have nothing else.

@@ -1,0 +1,51 @@
+﻿# WEAPON REPORT:
+# Name: Savage
+# Tier: 1
+# DPS: 98 (Semi-Auto)
+# Desc:
+
+- type: entity
+  name: Savage
+  parent: BaseWeaponPistol
+  id: WeaponPistolSavage
+  description: A popular modification of a venerable design that increases the size to allow for double stacked magazines. On the side is a serial number and '10x30mm'.
+  components:
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/Pistols/Savage.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 4.9
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_DV/Weapons/Guns/Gunshots/universal.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine10x30mmPistol
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine10x30mmPistol
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge10x30mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge10x30mm
+  - type: StaticPrice # Mono
+    price: 0
+  - type: Contraband
+    severity: FactionGear3
+    allowedDepartments: [ Civilian ]
+    turnInValues:
+      Doubloon: 2 # T2 tech, 2 doubloons.

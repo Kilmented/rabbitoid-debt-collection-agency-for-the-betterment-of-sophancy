@@ -6,7 +6,7 @@
   components:
   - type: Tag
     tags:
-      - Magazine10x30mmPistolFMJ
+      - Magazine10x30mmPistol
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:

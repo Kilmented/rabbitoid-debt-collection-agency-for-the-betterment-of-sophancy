@@ -18,7 +18,7 @@
     slots:
     - Back
     - suitStorage
-  - type: AmmoCounter
+#  - type: AmmoCounter # Wicce: Are you a psychic?
   - type: Gun
     fireRate: 2
     projectileSpeed: 40 # Mono
@@ -98,7 +98,7 @@
     slots:
     - Back
     - suitStorage
-  - type: AmmoCounter
+#  - type: AmmoCounter # Wicce: Are you a psychic?
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun
     fireRate: 3 # Goobstation

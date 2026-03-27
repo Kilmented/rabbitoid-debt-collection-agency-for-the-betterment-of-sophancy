@@ -14,8 +14,8 @@
   - type: Item
     size: Small
     shape:
-    - 0,0,1,0
-    - 0,1,0,1
+    - 0,0,1,1 # Wicce: was - 0,0,1,0
+#    - 0,1,0,1 # Wicce
   - type: Tag
     tags:
     - Sidearm
@@ -60,7 +60,7 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
-  - type: AmmoCounter
+#  - type: AmmoCounter # Wicce: Are you a psychic?
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -158,7 +158,7 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 25
-  - type: AmmoCounter
+#  - type: AmmoCounter # Wicce: Are you a psychic?
 
 - type: entity
   name: LWC mercenary PT-45C echis (9x19mm)
@@ -193,7 +193,7 @@
   - type: BatterySelfRecharger
     autoRecharge: true
     autoRechargeRate: 25
-  - type: AmmoCounter
+#  - type: AmmoCounter # Wicce: Are you a psychic?
 
 - type: entity
   name: CS PT-72 cobra (635x40mm)
