@@ -1,37 +1,37 @@
 ﻿# WEAPON REPORT:
-# Name: Ukoro
-# Tier: 2
-# DPS: 141 (Auto)
-# Desc: Starting carbine. Middling in stats, but has the advantage of being smaller.
+# Name: Vintovka
+# Tier: 3
+# DPS: 153 (Auto)
+# Desc: Endgame carbine. Trades a bayonet and firerate for a suppressor.
 
 - type: entity
-  name: Ukoro
+  name: Vintovka
   parent: BaseWeaponRifle
-  id: WeaponRifleUkoro
+  id: WeaponRifleVintovka
   description:
   abstract: false
   components:
   - type: Item
     size: Normal
     shape:
-    - 0,0,2,1
-    sprite: _WD/Objects/Weapons/Guns/Rifles/Ukoro.rsi
+    - 0,0,3,1
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Vintovka.rsi
   - type: Sprite
-    sprite: _WD/Objects/Weapons/Guns/Rifles/Ukoro.rsi
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Vintovka.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _WD/Objects/Weapons/Guns/Rifles/Ukoro.rsi
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Vintovka.rsi
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
   - type: Gun
     fireRate: 4.7
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/light_rifle_1.ogg
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/mla_fire.ogg
   - type: ItemSlots
     slots:
       gun_magazine:

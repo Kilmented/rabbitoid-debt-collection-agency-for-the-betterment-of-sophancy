@@ -10,6 +10,10 @@
   id: WeaponSniperSwaffen
   description: Design holdover from the early days of the Magimarches. Easy to maintain, even now. A trait that has allowed it to persist.
   components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,5,0
   - type: Sprite
     sprite: _WD/Objects/Weapons/Guns/Rifles/Swaffen.rsi
     layers:
