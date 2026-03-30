@@ -1,0 +1,68 @@
+﻿# WEAPON REPORT:
+# Name: Ukoro
+# Tier: 2
+# DPS: 124 (Auto)
+# Desc: Premier (and only, atm) battle rifle option of the Sophants. Solid all around, feels like heaven to shoot.
+
+- type: entity
+  name: Ukoro
+  parent: BaseWeaponRifle
+  id: WeaponRifleUkoro
+  description:
+  abstract: false
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,3,1
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Ukoro.rsi
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Ukoro.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Ukoro.rsi
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: Gun
+    fireRate: 4.7
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/light_rifle_1.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        startingItem: Magazine762x35mm
+        insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
+        ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine762x35mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge762x35mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge762x35mm
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice # Mono
+    price: 0
+  - type: Contraband
+    severity: FactionGear3
+    allowedDepartments: [ Civilian ]
+    turnInValues:
+      Doubloon: 2 # Worth just enough to warrant taking if you have nothing else.

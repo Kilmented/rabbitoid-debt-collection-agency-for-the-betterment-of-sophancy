@@ -1,0 +1,69 @@
+﻿# WEAPON REPORT:
+# Name: Falovka
+# Tier: 2
+# DPS: 124 (Auto)
+# Desc: Premier (and only, atm) battle rifle option of the Sophants. Solid all around, feels like heaven to shoot.
+
+- type: entity
+  name: Falovka
+  parent: BaseWeaponRifle
+  id: WeaponRifleFalovka
+  description:
+  abstract: false
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,1
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Falovka.rsi
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Falovka.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Falovka.rsi
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: Gun
+    fireRate: 3.1
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/light_rifle_1.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine68x51mm
+        insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
+        ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine68x51mm
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge68x51mmFMJ
+        priority: 1
+        whitelist:
+          tags:
+          - Cartridge68x51mm
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice # Mono
+    price: 0
+  - type: Contraband
+    severity: FactionGear3
+    allowedDepartments: [ Civilian ]
+    turnInValues:
+      Doubloon: 2 # Worth just enough to warrant taking if you have nothing else.

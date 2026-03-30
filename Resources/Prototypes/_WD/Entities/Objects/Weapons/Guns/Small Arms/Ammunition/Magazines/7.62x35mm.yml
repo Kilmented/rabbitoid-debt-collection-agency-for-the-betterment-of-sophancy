@@ -1,20 +1,20 @@
 ﻿# Default
 - type: entity
-  id: Magazine223
-  name: "magazine (.223)"
+  id: Magazine762x35mm
+  name: "magazine (7.62x35mm)"
   suffix: filled, FMJ
   parent: [ BaseItem, RecyclableItemSteelTiny ]
   components:
   - type: Tag
     tags:
-    - Magazine223
+    - Magazine762x35mm
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-      - Cartridge223
-    proto: Cartridge223FMJ
-    capacity: 20
+      - Cartridge762x35mm
+    proto: Cartridge762x35mmFMJ
+    capacity: 30
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -36,10 +36,10 @@
 # Empty Mag
 
 - type: entity
-  id: Magazine68x51mmEmpty
-  name: "magazine (.223)"
+  id: Magazine762x35mmEmpty
+  name: "magazine (7.62x35mm)"
   suffix: empty
-  parent: Magazine68x51mm
+  parent: Magazine762x35mm
   components:
   - type: BallisticAmmoProvider
     proto: null

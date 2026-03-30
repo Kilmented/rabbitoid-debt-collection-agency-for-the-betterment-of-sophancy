@@ -1,0 +1,53 @@
+﻿# WEAPON REPORT:
+# Name: Swaffen
+# Tier: 1
+# DPS: 112 (Semi-Auto) -- NOTE: Bolt action DPS is naturally lower because of the need to cycle. This is the maximum potential.
+# Desc: THE accessible DMR/Sniper. Not particularly good at either due to odd choice of caliber. Put in the sniper category as it lends itself more towards that gameplay.
+
+- type: entity
+  name: Swaffen
+  parent: [BaseWeaponSniper, BaseGunWieldable]
+  id: WeaponSniperSwaffen
+  description: Design holdover from the early days of the Magimarches. Easy to maintain, even now. A trait that has allowed it to persist.
+  components:
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Swaffen.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: Clothing
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Swaffen.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 2.8
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg # harmony - changed audio path
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+      - Cartridge68x51mm
+    capacity: 5
+    proto: Cartridge68x51mmFMJ
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 2 # Just a tad to make it not disorienting and to stack it on aim-mode.
+    pvsIncrease: 0.7
+  - type: StaticPrice
+    price: 0
+  - type: Appearance
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Contraband
+    severity: FactionGear3
+    allowedDepartments: [ Civilian ]
+    turnInValues:
+      Doubloon: 1 # Worth just enough to warrant taking if you have nothing else.

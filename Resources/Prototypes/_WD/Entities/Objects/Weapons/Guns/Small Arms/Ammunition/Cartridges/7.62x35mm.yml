@@ -1,13 +1,13 @@
 - type: entity
-  id: Cartridge223FMJ
-  name: cartridge (.223 FMJ)
+  id: Cartridge762x35mmFMJ
+  name: cartridge (7.62x35mm FMJ)
   parent: BaseCartridge
   description: An ancient pattern of centerfire, rimless, bottlenecked carbine cartridge.
   components:
   - type: Tag
     tags:
     - Cartridge
-    - Cartridge223
+    - Cartridge762x35mm
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -16,4 +16,4 @@
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: CartridgeAmmo
-    proto: Bullet223FMJ
+    proto: Bullet762x35mmFMJ

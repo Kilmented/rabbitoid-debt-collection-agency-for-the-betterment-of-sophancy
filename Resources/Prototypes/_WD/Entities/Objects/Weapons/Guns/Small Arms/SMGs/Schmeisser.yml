@@ -1,12 +1,12 @@
 ﻿# WEAPON REPORT:
 # Name: Schmeisser
-# Tier: 2
+# Tier: 1
 # DPS: 105 (Auto)
-# Desc: T1 SMG, first from research. Is relatively compact,
+# Desc: T1 SMG, first from research. Is relatively compact.
 
 - type: entity
   name: Schmeisser
-  parent: BaseWeaponSubMachineGun
+  parent: [BaseWeaponSubMachineGun , BaseGunWieldable]
   id: WeaponSMGSchmeisser
   description: An already venerable design rolled out of death by a lucky researcher who happened to find it, almost pristine, on an ancient hard drive.
   components:
@@ -24,16 +24,16 @@
     - Back
     - suitStorage
   - type: Gun
-    fireRate: 4.9
+    fireRate: 5.25
     soundGunshot:
-      path: /Audio/_DV/Weapons/Guns/Gunshots/universal.ogg
+      path: /Audio/_DV/Weapons/Guns/Gunshots/typewriter.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: Magazine9x18mmSMG
-        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -46,13 +46,13 @@
         whitelist:
           tags:
           - Cartridge9x18mm
-  - type: Wieldable
-    unwieldOnUse: false
-  - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -16
   - type: StaticPrice # Mono
     price: 0
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
   - type: Contraband
     severity: FactionGear3
     allowedDepartments: [ Civilian ]
