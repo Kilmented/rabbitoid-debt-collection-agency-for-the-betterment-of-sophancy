@@ -1,0 +1,26 @@
+﻿- type: entity
+  name: Paladin
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunPaladin
+  description: Pinnacle of shotgun development in the fourteenth century extrapolated from the recovered data from Null Sector expeditions.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,5,0
+    sprite: _WD/Objects/Weapons/Guns/Shotguns/Paladin.rsi
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/Shotguns/Paladin.rsi
+  - type: Clothing
+    sprite: _WD/Objects/Weapons/Guns/Shotguns/Paladin.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1.5
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ShellShotgun10Gauge
+    capacity: 5
+    proto: Shell10Gauge
+#  - type: GunSpreadModifier
+#    spread: 0.7 #Mono: 0.6 >> 0.7

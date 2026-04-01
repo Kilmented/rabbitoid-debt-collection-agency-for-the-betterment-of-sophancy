@@ -2,7 +2,7 @@
   id: Shell10Gauge
   name: shotgun shell (10ga)
   parent: BaseCartridge
-  description: Shotgun round. Kicks hard, and will tear a chunk out of anything that doesnt have the armor to protect it.
+  description: Shotgun round comprised of a bundle of needles inside of a soft cartridge. For use against mechanoids or otherwise.
   components:
   - type: Tag
     tags:

@@ -1,0 +1,26 @@
+﻿- type: entity
+  name: Freelancer
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunFreelancer
+  description: Similar to the Levy in loading mechanism, but improved with an updated design and materials.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,5,0
+    sprite: _WD/Objects/Weapons/Guns/Shotguns/Freelancer.rsi
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/Shotguns/Freelancer.rsi
+  - type: Clothing
+    sprite: _WD/Objects/Weapons/Guns/Shotguns/Freelancer.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1.4
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ShellShotgun10Gauge
+    capacity: 5
+    proto: Shell10Gauge
+#  - type: GunSpreadModifier
+#    spread: 0.7 #Mono: 0.6 >> 0.7

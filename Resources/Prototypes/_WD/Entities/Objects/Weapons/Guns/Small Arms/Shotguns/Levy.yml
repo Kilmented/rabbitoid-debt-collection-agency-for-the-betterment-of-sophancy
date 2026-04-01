@@ -1,0 +1,27 @@
+﻿- type: entity
+  name: Levy
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunLevy
+  description: Similar to a bolt action rifle, but with the loading mechanism changed to accomodate reliable cycling of an ancient ten gauge shell design.
+  components: # intend for Levy to have tighter choke for slower fire rate and/or manual cycling
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,0
+    sprite: _WD/Objects/Weapons/Guns/Shotguns/Levy.rsi
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/Shotguns/Levy.rsi
+  - type: Clothing
+    sprite: _WD/Objects/Weapons/Guns/Shotguns/Levy.rsi
+  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: Gun
+    fireRate: 1.2
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+      - ShellShotgun10Gauge
+    capacity: 3
+    proto: Shell10Gauge
+#  - type: GunSpreadModifier
+#    spread: 0.7 #Mono: 0.6 >> 0.7

@@ -1,6 +1,6 @@
 ﻿- type: entity
   id: Pellet10GaugeBuckshot
-  name: pellet (10ga)
+  name: flechette (10ga)
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   components:
@@ -12,7 +12,7 @@
       types:
         Piercing: 10
         Blunt: 15
-#    armorPenetration: -0.5
+    armorPenetration: -0.1
 
 - type: entity
   id: Pellet10GaugeBuckshotSpread
@@ -20,6 +20,6 @@
   parent: Pellet10GaugeBuckshot
   components:
   - type: ProjectileSpread
-    proto: Pellet20mmBuckshot
+    proto: Pellet10GaugeBuckshot
     count: 4
-    spread: 5
+    spread: 4
