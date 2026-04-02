@@ -1,0 +1,64 @@
+﻿# WEAPON REPORT:
+# Name: Cantius
+# Tier: 1
+# DPS: 112 (Semi-Auto) -- NOTE: Bolt action DPS is naturally lower because of the need to cycle. This is the maximum potential.
+# Desc:
+
+- type: entity
+  name: Cantius
+  parent: [BaseWeaponSniper, BaseGunWieldable]
+  id: WeaponSniperCantius
+  description: Design holdover from the early days of the Magimarches. Easy to maintain, even now. A trait that has allowed it to persist.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,6,1
+  - type: Sprite
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Cantius.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: Clothing
+    sprite: _WD/Objects/Weapons/Guns/Rifles/Cantius.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1.2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg # harmony - changed audio path
+    angleIncrease: 120
+    maxAngle: 150
+    minAngle: 21
+    angleDecay: 60
+    projectileSpeed: 50
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge86x70mm
+    capacity: 8
+    proto: Cartridge86x70mmFMJ
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 4 # Better.
+    pvsIncrease: 0.7
+  - type: StaticPrice
+    price: 0
+  - type: Appearance
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: LaserPointer
+    targetedColor: "#FF0000"
+    defaultColor: "#FF0000"
+  - type: Contraband
+    severity: FactionGear3
+    allowedDepartments: [ Civilian ]
+    turnInValues:
+      Doubloon: 3 # T2 weapon, reward for dealing with the backline
