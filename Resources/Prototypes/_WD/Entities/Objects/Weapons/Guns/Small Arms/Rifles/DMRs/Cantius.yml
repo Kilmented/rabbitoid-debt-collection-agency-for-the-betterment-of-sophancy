@@ -1,8 +1,8 @@
 ﻿# WEAPON REPORT:
 # Name: Cantius
-# Tier: 1
-# DPS: 112 (Semi-Auto) -- NOTE: Bolt action DPS is naturally lower because of the need to cycle. This is the maximum potential.
-# Desc:
+# Tier: 2
+# DPS: 144 (Semi-Auto)
+# Desc: High Alpha, debuting example of the DMR / Sniper archetype.
 
 - type: entity
   name: Cantius

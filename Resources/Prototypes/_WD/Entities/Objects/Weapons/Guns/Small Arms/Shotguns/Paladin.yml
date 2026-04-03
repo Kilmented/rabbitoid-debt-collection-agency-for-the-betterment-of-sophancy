@@ -1,4 +1,10 @@
-﻿- type: entity
+﻿# WEAPON REPORT:
+# Name: Paladin
+# Tier: 3
+# DPS: 150 (Semi-Auto)
+# Desc: One extra shot, better DPS.
+
+- type: entity
   name: Paladin
   parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: WeaponShotgunPaladin
@@ -22,5 +28,3 @@
       - ShellShotgun10Gauge
     capacity: 5
     proto: Shell10Gauge
-#  - type: GunSpreadModifier
-#    spread: 0.7 #Mono: 0.6 >> 0.7

@@ -1,4 +1,10 @@
-﻿- type: entity
+﻿# WEAPON REPORT:
+# Name: Freelancer
+# Tier: 2
+# DPS: 140 (Semi-Auto)
+# Desc: Higher capacity, higher potential damage.
+
+- type: entity
   name: Freelancer
   parent: [BaseWeaponShotgun, BaseGunWieldable]
   id: WeaponShotgunFreelancer
@@ -22,5 +28,3 @@
       - ShellShotgun10Gauge
     capacity: 5
     proto: Shell10Gauge
-#  - type: GunSpreadModifier
-#    spread: 0.7 #Mono: 0.6 >> 0.7
